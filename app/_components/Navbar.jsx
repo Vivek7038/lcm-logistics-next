@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
+import Link from "next/link";
 const data = [
   {
     label: "Home",
@@ -20,16 +21,19 @@ const data = [
   },
 ];
 const Navbar = () => {
+
   return (
-    <main className="min-h-30 max-w-[2500px] px-10 fixed">
-      <div className="flex flex-row justify-between items-center pt-10 gap-5">
-        <div className="font-bold text-[18px]">
-          <Image className="px-2" src="" alt="" />
+    <main className="min-h-30 max-w-[2500px]  fixed  ml-0 w-[100%] flex justify-center text-white ">
+      <div className="flex flex-row  items-center pt-10 gap-5 w-[100%] 2xl:w-[80%] bg-slate-300  justify-between">
+        <div className="font-bold text-[18px] flex items-center  ">
+          <img src={"./logo.png"} alt={"logo"} className={"h-8 w-8 mr-4"}></img>
+            <div className={"text-2xl text-black"}>
           LCM.PVT.LTD
+            </div>
         </div>
-        <div className="flex flex-row justify-start gap-x-2 cursor-pointer">
+        <div className="flex flex-row  gap-x-12 cursor-pointer">
           {data.map((item) => (
-            <h1>{item.label}</h1>
+              <h1><Link href={item.link} >{item.label}</Link></h1>
           ))}
         </div>
         <div className="inline-block md:hidden">
