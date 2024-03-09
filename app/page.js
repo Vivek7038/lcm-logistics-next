@@ -38,7 +38,7 @@ export default function Home() {
                     </div>
 
                     <div className={"w-12 h-0 border-2 border-black border-solid"}></div>
-                    <div className={"grid grid-cols-3 gap-5 w-[100%] mt-4 "}>
+                    <div className={"grid xl:grid-cols-3 md:grid-cols-2 gap-5 w-[100%] mt-4 "}>
                         {
                             [1,2,3,4,5,6].map((ele)=>{
                                 return (<div key={ele} className={"col-span-1 row-span-1 relative"}> <Card/></div>)
