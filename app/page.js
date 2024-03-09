@@ -1,7 +1,9 @@
 import Image from "next/image";
+import Card from "@/app/_components/Services-card";
 
 export default function Home() {
     return (
+        <div>
         <div
             className={"w-[100dvw] h-[100dvh] bg-[url('../public/Bg-home.png')] bg-cover flex justify-center pt-[30dvh]"}>
             <div className={"flex flex-col items-center text-white"}>
@@ -22,6 +24,26 @@ export default function Home() {
                     <a className={"ml-4"}>Best LMD services Award in Bangalore more than Thrice</a>
                 </div>
             </div>
+        </div>
+
+
+        {/*    --------------------------services*/}
+            <div className={" w-[100dwh] pt-12 flex flex-col items-center "}>
+                <div className={"w-[80%]"}>
+                    <div className={"text-1xl"}>
+                        LOGISTIC DELIVERY
+                    </div>
+                    <div className={"font-medium text-3xl my-2"}>
+                        OUR SERVICES
+                    </div>
+                    <div className={"w-12 h-0 border-2 border-black border-solid"}>
+<Card/>
+                    </div>
+
+
+                </div>
+            </div>
+
         </div>
     );
 }
