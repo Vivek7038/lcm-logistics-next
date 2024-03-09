@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Card from "@/app/_components/Services-card";
+import Choosecard from "@/app/_components/chooseus-card";
 
 export default function Home() {
     return (
@@ -50,6 +51,15 @@ export default function Home() {
 
 
                 </div>
+            </div>
+
+        {/*    --------------------Why choose us*/}
+            <div className={" w-[100dwh] py-12 flex flex-col items-center "}>
+                <div className={"w-[100%] flex justify-center font-bold text-6xl"}>
+                    WHY CHOOSE US?
+                </div>
+
+                <Choosecard/>
             </div>
 
         </div>
