@@ -28,7 +28,7 @@ export default function Home() {
 
 
         {/*    --------------------------services*/}
-            <div className={" w-[100dwh] pt-12 flex flex-col items-center "}>
+            <div className={" w-[100dwh] py-12 flex flex-col items-center "}>
                 <div className={"w-[80%]"}>
                     <div className={"text-1xl"}>
                         LOGISTIC DELIVERY
@@ -36,8 +36,16 @@ export default function Home() {
                     <div className={"font-medium text-3xl my-2"}>
                         OUR SERVICES
                     </div>
-                    <div className={"w-12 h-0 border-2 border-black border-solid"}>
-<Card/>
+
+                    <div className={"w-12 h-0 border-2 border-black border-solid"}></div>
+                    <div className={"grid grid-cols-3 gap-5 w-[100%] mt-4 "}>
+                        {
+                            [1,2,3,4,5,6].map((ele)=>{
+                                return (<div key={ele} className={"col-span-1 row-span-1 relative"}> <Card/></div>)
+                                }
+                            )
+                        }
+
                     </div>
 
 

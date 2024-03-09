@@ -11,7 +11,7 @@ export default function Card(props) {
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisiciquaerat quisquam cum ratione ea aliquid qui hic recusandae atque corporisng elit. Inventore,
                 </p>
-                <a className={"absolute font-medium right-4 bottom-4 "}>
+                <a className={"absolute font-medium right-4 bottom-4 cursor-pointer"}>
                     READ MORE
                 </a>
             </div>
