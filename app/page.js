@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-20 max-w-[2500px]">
-     Home
-    </main>
+    <div className={"w-[100dvw] h-[100dvh] bg-[url('../public/Bg-home.png')] bg-cover"}>
+
+    </div>
   );
 }
