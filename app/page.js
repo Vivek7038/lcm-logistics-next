@@ -175,8 +175,9 @@ Base`,
         {/*    ---------------------------Contact Form----------*/}
 
             <div  className={"flex w-[100%] h-[70vh]] mt-8"}>
-                <div className={"w-[30vw] h-[95dvh] bg-[url('../public/contactbg.png')] bg-cover"}>
-                        sdsadsd
+                <div className={"w-[30vw] h-[95dvh] bg-[url('../public/contactbg.png')] bg-cover text-white"}>
+                        <div className={"ml-8 mt-10"}><p>Get in Touch</p>
+                            <p className={"mt-8 text-4xl font-bold"}>Reach Out to Us</p></div>
                 </div>
                 <div className={"flex flex-col mx-auto "}>
                     <div className={"font-medium text-3xl flex justify-center mb-8"}>
