@@ -165,7 +165,7 @@ Base`,
 
 
             <div className={"h-[100%]  relative"}>
-                <img src={"bubblebg.png"} alt={""} className={"absolute h-40 w-40 -z-10 bottom-8 -right-20"}/>
+                <img src={"bubblebg.png"} alt={""} className={"absolute h-40 w-40 -z-10 2xl:bottom-28 -right-20 "}/>
                 <img src={"./Aboutus_vdo.png"} alt={"img"}/>
             </div>
         </div>
