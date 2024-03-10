@@ -61,8 +61,8 @@ Base`,
         <div>
             <div
                 className={"w-[100dvw] h-[100dvh] bg-[url('../public/Bg-home.png')] bg-cover flex justify-center pt-[30dvh]"}>
-                <div className={"flex flex-col items-center text-white"}>
-                    <div className={"2xl:text-9xl xl:text-8xl md:text-6xl font-bold   "}>LCM LOGISTICS</div>
+                <div className={"flex flex-col items-center text-white w-[80%] md:w-[100%]"}>
+                    <div className={"2xl:text-9xl xl:text-8xl md:text-6xl font-bold text-3xl   "}>LCM LOGISTICS</div>
                     <div className={"flex flex-col items-center mt-8 "}>
 
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,</p>
@@ -84,15 +84,15 @@ Base`,
             {/*    --------------------------services*/}
             <div className={" w-[100vw] py-12 flex flex-col items-center max-w-[100vw] "}>
                 <div className={"w-[80%]"}>
-                    <div className={"text-1xl"}>
+                    <div className={"text-1xl flex justify-center md:block"}>
                         LOGISTIC DELIVERY
                     </div>
-                    <div className={"font-medium text-3xl my-2"}>
+                    <div className={"font-medium text-3xl my-2 flex justify-center md:block" }>
                         OUR SERVICES
                     </div>
 
-                    <div className={"w-12 h-0 border-2 border-black border-solid"}></div>
-                    <div className={"grid xl:grid-cols-3 md:grid-cols-2 gap-5 w-[100%] mt-4 gap-x-2"}>
+                    <div className={"w-12 h-0 border-2 border-black border-solid flex justify-center md:block"}></div>
+                    <div className={"md:grid xl:grid-cols-3 md:grid-cols-2 gap-5 w-[100%] mt-4 gap-x-2 flex overflow-scroll "}>
                         {
                             [1, 2, 3, 4, 5, 6].map((ele) => {
                                     return (<div key={ele} className={"col-span-1 row-span-1 relative"}><Card/></div>)
