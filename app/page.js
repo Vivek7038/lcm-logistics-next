@@ -132,7 +132,7 @@ Base`,
 <div className={"flex justify-center w-[100%]"}>
     <div className={"w-[70%]  relative"}>
         <img src={"bubblebg.png"} alt={""} className={"absolute h-40 w-40 -z-10 top-20 -left-20"} />
-        <img src={"bubblebg.png"} alt={""} className={"absolute h-40 w-40 -z-10 bottom-8 -right-20"}/>
+
         <div className={"line w-[100%] h-0 border-[1px] border-solid border-gray-500 mt-4 mb-20"}></div>
         <div className={"font-bold text-6xl"}>
             ABOUT US
@@ -164,13 +164,64 @@ Base`,
             </div>
 
 
-            <div className={"h-[100%] overflow-hidden"}>
+            <div className={"h-[100%]  relative"}>
+                <img src={"bubblebg.png"} alt={""} className={"absolute h-40 w-40 -z-10 bottom-8 -right-20"}/>
                 <img src={"./Aboutus_vdo.png"} alt={"img"}/>
             </div>
         </div>
         <div className={"line w-[100%] h-0 border-[1px] border-solid border-gray-500 my-4"}></div>
     </div>
 </div>
+        {/*    ---------------------------Contact Form----------*/}
+
+            <div  className={"flex w-[100%] h-[70vh]] mt-8"}>
+                <div className={"w-[30vw] h-[95dvh] bg-[url('../public/contactbg.png')] bg-cover"}>
+                        sdsadsd
+                </div>
+                <div className={"flex flex-col mx-auto "}>
+                    <div className={"font-medium text-3xl flex justify-center mb-8"}>
+                        Contact Form
+                    </div>
+                    <div>
+                        <p>Have questions or feedback? We're here to help. Send us a
+                            message, and we'll respond within 24 hours</p>
+                    </div>
+                    <div className={"w-[100%] h-[0] border-[1px] border-gray-500 border-solid my-8"}></div>
+                    <div className="w-[100%]">
+                        <form className={"w-[100%] flex flex-col gap-10"}>
+                            <div className={"grid grid-cols-2 gap-4"}>
+                                <label>
+                                    First name
+                                    <input className={" pl-4 border-0 outline-0 h-12 rounded-xl bg-gray-200 w-[100%]"} placeholder={"first name"}/>
+                                </label>
+                                <label>
+                                    Last name
+                                    <input placeholder={"Last name"} className={"pl-4 border-0 outline-0 h-12 rounded-xl bg-gray-200 w-[100%]"}/>
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    Email Address
+                                    <input type={"email"} placeholder={"email address"} className={"pl-4 border-0 outline-0 h-12 rounded-xl bg-gray-200 w-[100%]"}/>
+                                </label>
+
+                            </div>
+                            <div>
+
+                                <label>
+                                    Message
+                                    <input placeholder={"leave a message"} className={"pl-4 border-0 outline-0 h-28 rounded-xl bg-gray-200 w-[100%]"}/>
+                                </label>
+                            </div>
+                            <button  className={"outline-0 border-2 h-12 border-black border-solid rounded-xl"}>Send</button>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+
+
         </div>
     );
 }
