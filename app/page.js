@@ -113,7 +113,7 @@ Base`,
                     WHY CHOOSE US?
                 </div>
 
-                <div className={"md:grid md:grid-cols-2 xl:gap-x-44 xl:gap-y-12 md:gap-x-12 md:gap-y-8 my-12 flex overflow-scroll w-[100%] gap-4"}>
+                <div className={"md:grid md:grid-cols-2 xl:gap-x-44 xl:gap-y-12 md:gap-x-12 md:gap-y-8 my-12 flex overflow-scroll w-[95%] gap-4 ml-4 md:ml-0 "}>
                     {chooseus.map((ele,index) => {
                         return (<div><Choosecard  key={index} title={ele.title} desc={ele.desc} svg={ele.svg}/></div>)
                     })}
@@ -134,7 +134,7 @@ Base`,
         <img src={"bubblebg.png"} alt={""} className={"absolute h-40 w-40 -z-10 xl:top-20 xl:-left-20 md:top-32 md:-left-2 hidden md:block" } />
 
         <div className={"line w-[100%] h-0 border-[1px] border-solid border-gray-500 mt-4 mb-20"}></div>
-        <div className={"font-bold xl:text-6xl md:text-5xl md:flex md:flex-col md:items-center xl:block flex flex-col items-center flex-wrap"}>
+        <div className={"font-bold xl:text-6xl md:text-5xl text-3xl md:flex md:flex-col md:items-center xl:block flex flex-col items-center flex-wrap"}>
             ABOUT US
             <div className={"xl:hidden mt-2 text-sm font-normal"}>We are logistics company based in <a className={"font-bold italic"}>BANGALORE</a></div>
         </div>
@@ -176,22 +176,22 @@ Base`,
 </div>
         {/*    ---------------------------Contact Form----------*/}
 
-            <div  className={"flex w-[100%] h-[70vh]] mt-8"}>
-                <div className={"w-[30vw] h-[95dvh] bg-[url('../public/contactbg.png')] bg-cover text-white"}>
+            <div  className={"md:flex w-[100%] h-[70vh]] mt-8"}>
+                <div className={" hidden md:block w-[30vw] h-[95dvh] bg-[url('../public/contactbg.png')] bg-cover text-white"}>
                         <div className={"ml-8 mt-10"}><p>Get in Touch</p>
                             <p className={"mt-8 text-4xl font-bold"}>Reach Out to Us</p></div>
                 </div>
-                <div className={"flex flex-col mx-auto "}>
+                <div className={"text-white md:text-black flex flex-col mx-auto bg-[url('../public/contactbg.png')] md:bg-none bg-cover"}>
                     <div className={"font-medium text-3xl flex justify-center mb-8"}>
                         Contact Form
                     </div>
-                    <div className={"xl:ml-0 md:ml-6 xl:w-[100%] md:w-[80%]"}>
+                    <div className={"xl:ml-0 p-4 md:p-0 md:ml-6 xl:w-[100%] md:w-[80%]"}>
                         <p>Have questions or feedback? We're here to help. Send us a
                             message, and we'll respond within 24 hours</p>
                     </div>
-                    <div className={"xl:w-[100%] md:w-[80%] ml-6 h-[0] border-[1px] border-gray-500 border-solid my-8"}></div>
-                    <div className="w-[100%]">
-                        <form className={"xl:w-[100%] md:w-[80%] ml-6 flex flex-col xl:gap-10 md:gap-6"}>
+                    <div className={"xl:w-[100%] md:w-[80%] md:ml-6  md:p-0 h-[0] border-[1px] border-gray-500 border-solid my-8"}></div>
+                    <div className="w-[100%] p-4 md:p-0">
+                        <form className={"xl:w-[100%] md:w-[80%] md:ml-6 flex flex-col xl:gap-10 md:gap-6"}>
                             <div className={"grid grid-cols-2 gap-4"}>
                                 <label>
                                     First name
@@ -216,7 +216,7 @@ Base`,
                                     <input placeholder={"leave a message"} className={"pl-4 border-0 outline-0 h-28 rounded-xl bg-gray-200 w-[100%]"}/>
                                 </label>
                             </div>
-                            <button  className={"outline-0 border-2 h-12 border-black border-solid rounded-xl"}>Send</button>
+                            <button  className={" mt-4 md:mt-0 outline-0 border-2 h-12 md:border-black  border-b-white border-solid rounded-xl"}>Send</button>
                         </form>
                     </div>
                 </div>
