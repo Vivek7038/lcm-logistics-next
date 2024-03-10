@@ -129,19 +129,21 @@ Base`,
 
         {/*    ---------------------About us*/}
 <div className={"flex justify-center w-[100%]"}>
-    <div className={"w-[70%]  relative"}>
-        <img src={"bubblebg.png"} alt={""} className={"absolute h-40 w-40 -z-10 top-20 -left-20"} />
+    <div className={"xl:w-[70%] md:w-[95%] relative"}>
+        <img src={"bubblebg.png"} alt={""} className={"absolute h-40 w-40 -z-10 xl:top-20 xl:-left-20 md:top-32 md:-left-2"} />
 
         <div className={"line w-[100%] h-0 border-[1px] border-solid border-gray-500 mt-4 mb-20"}></div>
-        <div className={"font-bold text-6xl"}>
+        <div className={"font-bold xl:text-6xl md:text-5xl md:flex md:flex-col md:items-center xl:block"}>
             ABOUT US
+            <div className={"xl:hidden mt-2 text-sm font-normal"}>We are logistics company based in <a className={"font-bold italic"}>BANGALORE</a></div>
         </div>
+
         <div className={"grid grid-cols-2 my-12 font-medium"}>
-            <div className={"w-[89%]"}>
-                <div>We are logistics company based in <a className={"font-bold italic"}>BANGALORE</a></div>
+            <div className={"xl:w-[89%]"}>
+                <div className={"md:hidden xl:block"}>We are logistics company based in <a className={"font-bold italic"}>BANGALORE</a></div>
 
                 <div>
-                    <p className={"my-12"}>Established in 2015, LCM stands out as a premier midsize delivery and
+                    <p className={"xl:my-12 md:mb-8 md:mt-0"}>Established in 2015, LCM stands out as a premier midsize delivery and
                         logistics company headquartered in Bangalore. Over the years, we have cultivated strong,
                         enduring partnerships with esteemed businesses such as ajjp, Jio Mart, Reliance Digital, Indian
                         Posts, and more. Our commitment to excellence has propelled us towards remarkable annual
@@ -164,7 +166,7 @@ Base`,
 
 
             <div className={"h-[100%]  relative"}>
-                <img src={"bubblebg.png"} alt={""} className={"absolute h-40 w-40 -z-10 2xl:bottom-28 -right-20 "}/>
+                <img src={"bubblebg.png"} alt={""} className={"absolute h-40 w-40 -z-10 2xl:bottom-28 md:bottom-12 xl:-right-20 md:right-2"}/>
                 <img src={"./Aboutus_vdo.png"} alt={"img"}/>
             </div>
         </div>
