@@ -97,7 +97,7 @@ const Page = () => {
             Varius risus montes morbi ultrices sed ut. Lorem.
           </p>
 
-          <div className="flex flex-col gap-y-3">
+          <div className="flex flex-col gap-y-1">
             {FaqData.map((item, index) => (
               <Accordion
                 key={index}
@@ -121,7 +121,7 @@ const Page = () => {
                   id={`panel${index}-header`}
                   style={{
                     backgroundColor:
-                      expanded === `panel${index}` ? "black" : "#f1f1f1",
+                      expanded === `panel${index}` ? "black" : "white",
                     borderBottom: "1px solid #ccc",
                     color: expanded === `panel${index}` ? "white" : "initial",
                     padding: "10px", // Add additional styles as needed
