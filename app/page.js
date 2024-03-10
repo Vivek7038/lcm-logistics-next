@@ -79,7 +79,7 @@ Base`,
 
 
             {/*    --------------------------services*/}
-            <div className={" w-[100dwh] py-12 flex flex-col items-center "}>
+            <div className={" w-[100vw] py-12 flex flex-col items-center max-w-[100vw] "}>
                 <div className={"w-[80%]"}>
                     <div className={"text-1xl"}>
                         LOGISTIC DELIVERY
@@ -89,7 +89,7 @@ Base`,
                     </div>
 
                     <div className={"w-12 h-0 border-2 border-black border-solid"}></div>
-                    <div className={"grid xl:grid-cols-3 md:grid-cols-2 gap-5 w-[100%] mt-4 "}>
+                    <div className={"grid xl:grid-cols-3 md:grid-cols-2 gap-5 w-[100%] mt-4 gap-x-2"}>
                         {
                             [1, 2, 3, 4, 5, 6].map((ele) => {
                                     return (<div key={ele} className={"col-span-1 row-span-1 relative"}><Card/></div>)
@@ -104,7 +104,7 @@ Base`,
             </div>
 
             {/*    --------------------Why choose us*/}
-            <div className={" w-[100dwh] py-12 flex flex-col items-center "}>
+            <div className={" w-[100vw] max-w-[100vw] py-12 flex flex-col items-center "}>
                 <div className={"w-[100%] flex justify-center font-bold text-6xl"}>
                     WHY CHOOSE US?
                 </div>
