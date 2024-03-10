@@ -49,10 +49,10 @@ const page = () => {
             width={300}
             height={15}
             layout="responsive"
-            className="object-contain"
+            className="object-contain w-full h-auto min-h-full"
           />
         </div>
-        <div className="bg-[#F4F4F4] md:w-[40%] border rounded-lg flex flex-col h-fit max-h-fit pb-2">
+        <div className="bg-[#F4F4F4] md:w-[40%] border rounded-lg flex flex-col h-fit min-h-full max-h-fit pb-2">
           <h1 className="text-[16px] font-bold px-4 py-8">All Serivces</h1>
           <div className="px-8 flex flex-col gap-y-2 py-2">
             {data.map((item, index) => (
@@ -79,7 +79,7 @@ const page = () => {
           <h1 className="text-[64px] font-bold">Overview</h1>
           <p className="text-justify ">{selectedService.desc}</p>
         </div>
-        <div className="bg-[#161616] md:w-[40%] ">dmf d</div>
+
       </div>
     </div>
   );
