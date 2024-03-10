@@ -108,19 +108,20 @@ Base`,
 
             {/*    --------------------Why choose us*/}
             <div className={" w-[100vw] my-4 max-w-[100vw] py-12 flex flex-col items-center "}>
-                <div className={"w-[100%] flex justify-center font-bold xl:text-6xl md:text-5xl"}>
+                <div className={"w-[100%] flex justify-center font-bold xl:text-6xl md:text-5xl text-3xl"}>
+
                     WHY CHOOSE US?
                 </div>
 
-                <div className={"grid grid-cols-2 xl:gap-x-44 xl:gap-y-12 md:gap-x-12 md:gap-y-8 my-12"}>
+                <div className={"md:grid md:grid-cols-2 xl:gap-x-44 xl:gap-y-12 md:gap-x-12 md:gap-y-8 my-12 flex overflow-scroll w-[100%] gap-4"}>
                     {chooseus.map((ele,index) => {
-                        return (<Choosecard key={index} title={ele.title} desc={ele.desc} svg={ele.svg}/>)
+                        return (<div><Choosecard  key={index} title={ele.title} desc={ele.desc} svg={ele.svg}/></div>)
                     })}
                 </div>
-                <div className={"flex w-[100%] justify-center font-medium"}>
+                <div className={"md:flex w-[100%] justify-center font-medium hidden "}>
                     Trusted by
                 </div>
-                <div className={"flex xl:justify-between md:justify-around xl:w-[80%]  md:w-[50%] md:flex-wrap "}>
+                <div className={"md:flex xl:justify-between md:justify-around xl:w-[80%]  md:w-[50%] md:flex-wrap hidden "}>
                     {trustedby.map((e,index)=>{
                         return <div key={index}><img className={"xl:h-8 md:h-6 w-auto my-4"} src={e} alt={"img"}/></div>
                     })}
