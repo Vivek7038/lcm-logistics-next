@@ -62,12 +62,11 @@ Base`,
             <div
                 className={"w-[100dvw] h-[100dvh] bg-[url('../public/Bg-home.png')] bg-cover flex justify-center pt-[30dvh]"}>
                 <div className={"flex flex-col items-center text-white"}>
-                    <div className={"2xl:text-9xl xl:text-8xl font-bold   "}>LCM LOGISTICS</div>
-                    <div className={"flex flex-col items-center mt-8"}>
+                    <div className={"2xl:text-9xl xl:text-8xl md:text-6xl font-bold   "}>LCM LOGISTICS</div>
+                    <div className={"flex flex-col items-center mt-8 "}>
 
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,</p>
-                        <p>quaerat quisquam cum ratione ea aliquid qui hic recusandae atque corporis.
-                            Best LMD services Award in Bangalore more than Thrice </p>
+                        <p>quaerat quisquam cum ratione ea aliquid qui hic recusandae atque corporis.</p>
                     </div>
                     <div className={"flex mt-8 items-center"}>
                         <svg width="30" height="32" viewBox="0 0 35 37" fill="none" xmlns="http://www.w3.org/2000/svg">
