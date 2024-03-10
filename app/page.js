@@ -184,13 +184,13 @@ Base`,
                     <div className={"font-medium text-3xl flex justify-center mb-8"}>
                         Contact Form
                     </div>
-                    <div>
+                    <div className={"xl:ml-0 md:ml-6 xl:w-[100%] md:w-[80%]"}>
                         <p>Have questions or feedback? We're here to help. Send us a
                             message, and we'll respond within 24 hours</p>
                     </div>
-                    <div className={"w-[100%] h-[0] border-[1px] border-gray-500 border-solid my-8"}></div>
+                    <div className={"xl:w-[100%] md:w-[80%] ml-6 h-[0] border-[1px] border-gray-500 border-solid my-8"}></div>
                     <div className="w-[100%]">
-                        <form className={"w-[100%] flex flex-col gap-10"}>
+                        <form className={"xl:w-[100%] md:w-[80%] ml-6 flex flex-col xl:gap-10 md:gap-6"}>
                             <div className={"grid grid-cols-2 gap-4"}>
                                 <label>
                                     First name
