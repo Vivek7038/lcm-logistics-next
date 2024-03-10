@@ -40,8 +40,8 @@ const page = () => {
     setSelecetedService(data[index]);
   };
   return (
-    <div className="min-h-fit max-h-screen px-6 mt-10 mb-20 overflow-y-auto flex-col hide-scrollbar md:px-20">
-      <div className="flex flex-col md:flex-row gap-y-8 gap-x-5 ">
+    <div className="min-h-fit max-h-screen px-6 flex-col hide-scrollbar md:px-20 top-20 ">
+      <div className="flex flex-col md:flex-row gap-y-8 gap-x-5 pt-20">
         <div className="w-full h-100 md:w-[70%] ">
           <img
             src="/warehouse.png"
