@@ -1,4 +1,5 @@
 "use client";
+import { GiRotaryPhone } from "react-icons/gi";
 import React, { useState } from "react";
 import Image from "next/image";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
@@ -74,12 +75,25 @@ const page = () => {
         </div>
       </div>
 
-      <div className="flex md:flex-row ">
-        <div className="md:w-[60%]">
+      <div className="flex flex-col md:flex-row gap-y-8 gap-x-5 pt-20">
+        <div className="w-full h-100 md:w-[70%]">
           <h1 className="text-[64px] font-bold">Overview</h1>
           <p className="text-justify ">{selectedService.desc}</p>
         </div>
-
+        <div className="bg-black md:w-[40%] border rounded-lg flex flex-col h-fit min-h-full max-h-fit pb-2 ">
+          <div className="pl-30 ml-auto mr-auto flex mt-4 items-center justify-center w-12 h-12 bg-white rounded-full">
+            <GiRotaryPhone className="text-black w-6 h-6" />
+          </div>
+          <div className="mx-auto max-h-50 py-3">
+            <p className="text-lg text-white ">Best Logistics services</p>
+          </div>
+          <div className="mx-auto max-h-50 py-3">
+            <p className="text-lg text-white ">666 888 0000</p>
+          </div>
+          <div className="mx-auto max-h-50 py-3">
+            <p className="text-lg text-white ">Call us any time</p>
+          </div>
+        </div>
       </div>
     </div>
   );
