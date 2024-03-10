@@ -113,7 +113,7 @@ Base`,
                     WHY CHOOSE US?
                 </div>
 
-                <div className={"grid grid-cols-2 gap-x-36 gap-y-12 my-12"}>
+                <div className={"grid grid-cols-2 gap-x-44 gap-y-12 my-12"}>
                     {chooseus.map((ele,index) => {
                         return (<Choosecard key={index} title={ele.title} desc={ele.desc} svg={ele.svg}/>)
                     })}
@@ -128,6 +128,28 @@ Base`,
                 </div>
             </div>
 
+        {/*    ---------------------About us*/}
+<div className={"flex justify-center w-[100%]"}>
+    <div className={"w-[70%]"}>
+        <div className={"font-bold text-6xl"}>
+            ABOUT US
+        </div>
+        <div className={"grid grid-cols-2 my-12 font-medium"}>
+            <div className={"w-[89%]"}>
+                <div>We are logistics company based in <a className={"font-bold italic"}>BANGALORE</a></div>
+
+                <div>
+                    <p className={"my-12"}>Established in 2015, LCM stands out as a premier midsize delivery and logistics company headquartered in Bangalore. Over the years, we have cultivated strong, enduring partnerships with esteemed businesses such as ajjp, Jio Mart, Reliance Digital, Indian Posts, and more. Our commitment to excellence has propelled us towards remarkable annual growth.</p>
+                    <p>In addition to our delivery services, we specialize in warehousing and proficiently manage various warehouse facilities. With a dedicated team of over 60+ employees, we oversee operations for businesses under contract, boasting a fleet of 140+ owned vehicles and an additional 500+ vehicles available on call.</p>
+                </div>
+            </div>
+
+            <div className={"h-[100%] overflow-hidden"}>
+                <img className={"h-[100%]"} src={"./Aboutus_vdo.png"} alt={"img"}/>
+            </div>
+        </div>
+    </div>
+</div>
         </div>
     );
 }
