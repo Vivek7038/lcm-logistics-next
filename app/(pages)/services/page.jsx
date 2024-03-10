@@ -72,7 +72,7 @@ const Page = () => {
             </h1>
             <p className="text-justify ">{selectedService.desc}</p>
           </div>
-          <div className="bg-black md:w-[40%] border rounded-lg flex flex-col h-fit min-h-full max-h-fit pb-2 ">
+          <div className="bg-black md:w-[40%] border rounded-lg flex flex-col h-fit min-h-full md:min-h-[300px]  pb-2 justify-between ">
             <div className="ml-auto mr-auto flex mt-4 items-center justify-center w-12 h-12 bg-white rounded-full">
               <GiRotaryPhone className="text-black w-6 h-6" />
             </div>
@@ -97,7 +97,7 @@ const Page = () => {
             Varius risus montes morbi ultrices sed ut. Lorem.
           </p>
 
-          <div className="flex flex-col gap-y-3">
+          <div className="flex flex-col gap-y-1">
             {FaqData.map((item, index) => (
               <Accordion
                 key={index}
@@ -121,7 +121,7 @@ const Page = () => {
                   id={`panel${index}-header`}
                   style={{
                     backgroundColor:
-                      expanded === `panel${index}` ? "black" : "#f1f1f1",
+                      expanded === `panel${index}` ? "black" : "white",
                     borderBottom: "1px solid #ccc",
                     color: expanded === `panel${index}` ? "white" : "initial",
                     padding: "10px", // Add additional styles as needed
