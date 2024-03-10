@@ -1,5 +1,12 @@
 import ProfileCard from "@/app/_components/ProfileCard";
+import TimelineCard from "@/app/_components/TimelineCard";
 import React from "react";
+import Timeline from "@mui/lab/Timeline";
+import TimelineItem from "@mui/lab/TimelineItem";
+import TimelineSeparator from "@mui/lab/TimelineSeparator";
+import TimelineConnector from "@mui/lab/TimelineConnector";
+import TimelineContent from "@mui/lab/TimelineContent";
+import TimelineDot from "@mui/lab/TimelineDot";
 
 const page = () => {
   return (
@@ -26,6 +33,16 @@ const page = () => {
                 tincidunt urna commodo sapien eget elementum
               </p>
             </div>
+          </div>
+        </div>
+
+        {/* timeline  */}
+        <div className="flex flex-col  gap-y-8 gap-x-5 items-start pt-[10dvh] max-w-[100dvw]">
+          <h1 className="md:text-6xl text-4xl  text-black font-bold my-3">
+            From Routes to Revenue: A Three-Year Overview
+          </h1>
+          <div>
+           <TimelineCard />
           </div>
         </div>
 
