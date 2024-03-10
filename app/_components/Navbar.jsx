@@ -49,7 +49,7 @@ const Navbar = () => {
         </div>
         <div className="hidden md:flex flex-row  gap-x-12 cursor-pointer ">
           {data.map((item) => (
-            <h1>
+            <h1 key={item.name}>
               <Link href={item.link}>{item.label}</Link>
             </h1>
           ))}
