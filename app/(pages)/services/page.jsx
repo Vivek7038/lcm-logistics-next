@@ -10,7 +10,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Button from "@mui/material/Button";
 import { FaqData, data } from "../../data.js";
-const page = () => {
+const Page = () => {
   const [selectedService, setSelecetedService] = useState(data[0]);
   const handleClick = (index) => {
     setSelecetedService(data[index]);
@@ -146,4 +146,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

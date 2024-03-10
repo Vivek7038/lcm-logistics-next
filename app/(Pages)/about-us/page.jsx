@@ -3,7 +3,7 @@ import TimelineCard from "@/app/_components/TimelineCard";
 import React from "react";
 
 
-const page = () => {
+const Page = () => {
   return (
     <div className="w-[100dvw] h-[100dvh] min-h-[100dvh] flex-col hide-scrollbar  ">
       <div className="bg-[url('../public/Bg-home.png')] bg-cover flex flex-col justify-center pt-[30dvh] min-w-[100dvw] min-h-[80dvh] ">
@@ -67,4 +67,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
