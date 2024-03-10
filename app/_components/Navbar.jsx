@@ -24,7 +24,7 @@ const data = [
 const Navbar = () => {
   const [color, setColor] = useState(true);
   const changeColor = () => {
-    if (window.scrollY >= 90) {
+    if (typeof window !== 'undefined' && window.scrollY >= 90) {
       setColor(true);
     } else {
       setColor(false);
