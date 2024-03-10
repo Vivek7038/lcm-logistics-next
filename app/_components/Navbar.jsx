@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
+import Link from "next/link";
 const data = [
   {
     label: "Home",
@@ -20,20 +22,44 @@ const data = [
   },
 ];
 const Navbar = () => {
+  const [color, setColor] = useState(true);
+  useEffect(() => {
+    const changeColor = () => {
+      if (typeof window !== "undefined" && window.scrollY >= 90) {
+        setColor(true);
+      } else {
+        setColor(false);
+      }
+    };
+
+    window.addEventListener("scroll", changeColor);
+
+    return () => {
+      window.removeEventListener("scroll", changeColor);
+    };
+  }, []);
   return (
-    <main className="min-h-30 max-w-[2500px] px-10 fixed">
-      <div className="flex flex-row justify-between items-center pt-10 gap-5">
-        <div className="font-bold text-[18px]">
-          <Image className="px-2" src="" alt="" />
-          LCM.PVT.LTD
+    <main
+      className={`z-[9999] min-h-30  fixed  w-[100vw]  text-white ${
+        color ? "bg-black" : ""
+      }`}
+    >
+      <div className="flex flex-row  items-center  justify-between py-7 px-10">
+        <div className="font-bold text-[18px] flex items-center justify-between">
+          <img src={"./logo.png"} alt={"logo"} className={"h-8 w-8 pr-2"}></img>
+          <div className={`text-2xl text-black ${color ? "text-white" : ""}`}>
+            LCM.PVT.LTD
+          </div>
         </div>
-        <div className="flex flex-row justify-start gap-x-2 cursor-pointer">
-          {data.map((item) => (
-            <h1>{item.label}</h1>
-          ))}
-        </div>
-        <div className="inline-block md:hidden">
+        <div className="z-[999] md:hidden">
           <MenuIcon />
+        </div>
+        <div className="hidden md:flex flex-row  gap-x-12 cursor-pointer ">
+          {data.map((item) => (
+            <h1 key={item.name}>
+              <Link href={item.link}>{item.label}</Link>
+            </h1>
+          ))}
         </div>
       </div>
     </main>
