@@ -130,7 +130,9 @@ Base`,
 
         {/*    ---------------------About us*/}
 <div className={"flex justify-center w-[100%]"}>
-    <div className={"w-[70%]"}>
+    <div className={"w-[70%]  relative"}>
+        <img src={"bubblebg.png"} alt={""} className={"absolute h-40 w-40 -z-10 top-20 -left-20"} />
+        <img src={"bubblebg.png"} alt={""} className={"absolute h-40 w-40 -z-10 bottom-8 -right-20"}/>
         <div className={"line w-[100%] h-0 border-[1px] border-solid border-gray-500 mt-4 mb-20"}></div>
         <div className={"font-bold text-6xl"}>
             ABOUT US
