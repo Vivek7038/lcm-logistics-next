@@ -110,8 +110,8 @@ Base`,
                 </div>
 
                 <div className={"grid grid-cols-2 gap-x-20 gap-y-12 my-8"}>
-                    {chooseus.map((ele) => {
-                        return (<Choosecard title={ele.title} desc={ele.desc} svg={ele.svg}/>)
+                    {chooseus.map((ele,index) => {
+                        return (<Choosecard key={index} title={ele.title} desc={ele.desc} svg={ele.svg}/>)
                     })}
                 </div>
             </div>
