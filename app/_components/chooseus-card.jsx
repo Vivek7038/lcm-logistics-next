@@ -1,6 +1,6 @@
 export default function Choosecard(props){
     return(
-        <div className={"p-6 border-black border-solid border-2 rounded-lg border-l-8 w-[500px] h-[200px]"} >
+        <div className={"xl:p-6 md:p-4 border-black border-solid border-2 rounded-lg border-l-8 xl:w-[500px] xl:h-[200px] md:w-[350px] md:h-[190px]"} >
             <div className={"text-2xl flex justify-between font-medium "}>
                 {props.title}
                 {/*<svg width="41" height="35" viewBox="0 0 41 35" fill="none" xmlns="http://www.w3.org/2000/svg">*/}
@@ -11,7 +11,7 @@ export default function Choosecard(props){
                 {props.svg}
 
             </div>
-            <div className={"mt-4 w-[50%]"}>
+            <div className={"mt-4 xl:w-[50%] md:w-[80%]"}>
                 {props.desc}
             </div>
         </div>

@@ -40,7 +40,7 @@ const Navbar = () => {
   }, []);
   return (
     <main
-      className={`z-[9999] min-h-30  fixed  w-[100vw]  text-white ${
+      className={`z-[9999] min-h-30  fixed  lg:w-[100vw]  text-white ${
         color ? "bg-black" : ""
       }`}
     >
