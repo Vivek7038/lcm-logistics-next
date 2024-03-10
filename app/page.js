@@ -121,9 +121,9 @@ Base`,
                 <div className={"flex w-[100%] justify-center font-medium"}>
                     Trusted by
                 </div>
-                <div className={"flex justify-between w-[70%] "}>
+                <div className={"flex xl:justify-between md:justify-around xl:w-[80%]  md:w-[50%] md:flex-wrap "}>
                     {trustedby.map((e,index)=>{
-                        return <div key={index}><img className={"h-8 w-auto my-4"} src={e} alt={"img"}/></div>
+                        return <div key={index}><img className={"xl:h-8 md:h-6 w-auto my-4"} src={e} alt={"img"}/></div>
                     })}
                 </div>
             </div>
