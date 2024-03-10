@@ -3,46 +3,27 @@ import { GiRotaryPhone } from "react-icons/gi";
 import React, { useState } from "react";
 import Image from "next/image";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-const data = [
-  {
-    name: "service 1",
-    desc: `Lorem ipsum dolor sit amet consectetur. Tempus lectus sapien tristique mattis augue fames leo euismod. Curabitur dictum quisque arcu posuere vestibulum euismod turpis. Sed consequat velit donec adipiscing a. Euismod feugiat morbi justo id suspendisse neque dis quam. Malesuada morbi diam proin volutpat nulla erat. Curabitur ultrices tortor viverra dignissim commodo. Interdum.
-    Lorem ipsum dolor sit amet consectetur. Tempus lectus sapien tristique mattis augue fames leo euismod. Curabitur dictum quisque arcu posuere vestibulum euismod turpis. Sed consequat velit donec adipiscing a. Euismod feugiat morbi justo id suspendisse neque dis quam. Malesuada morbi diam proin volutpat nulla erat. Curabitur ultrices tortor viverra dignissim commodo. Interdum`,
-  },
-  {
-    name: "service 2",
-    desc: `Lorem ipsum dolor sit amet consectetur. Tempus lectus sapien tristique mattis augue fames leo euismod. Curabitur dictum quisque arcu posuere vestibulum euismod turpis. Sed consequat velit donec adipiscing a. Euismod feugiat morbi justo id suspendisse neque dis quam. Malesuada morbi diam proin volutpat nulla erat. Curabitur ultrices tortor viverra dignissim commodo. Interdum.
-    Lorem ipsum dolor sit amet consectetur. Tempus lectus sapien tristique mattis augue fames leo euismod. Curabitur dictum quisque arcu posuere vestibulum euismod turpis. Sed consequat velit donec adipiscing a. Euismod feugiat morbi justo id suspendisse neque dis quam. Malesuada morbi diam proin volutpat nulla erat. Curabitur ultrices tortor viverra dignissim commodo. Interdum`,
-  },
-  {
-    name: "service 3",
-    desc: `Lorem ipsum dolor sit amet consectetur. Tempus lectus sapien tristique mattis augue fames leo euismod. Curabitur dictum quisque arcu posuere vestibulum euismod turpis. Sed consequat velit donec adipiscing a. Euismod feugiat morbi justo id suspendisse neque dis quam. Malesuada morbi diam proin volutpat nulla erat. Curabitur ultrices tortor viverra dignissim commodo. Interdum.
-    Lorem ipsum dolor sit amet consectetur. Tempus lectus sapien tristique mattis augue fames leo euismod. Curabitur dictum quisque arcu posuere vestibulum euismod turpis. Sed consequat velit donec adipiscing a. Euismod feugiat morbi justo id suspendisse neque dis quam. Malesuada morbi diam proin volutpat nulla erat. Curabitur ultrices tortor viverra dignissim commodo. Interdum`,
-  },
-  {
-    name: "service 4",
-    desc: `Lorem ipsum dolor sit amet consectetur. Tempus lectus sapien tristique mattis augue fames leo euismod. Curabitur dictum quisque arcu posuere vestibulum euismod turpis. Sed consequat velit donec adipiscing a. Euismod feugiat morbi justo id suspendisse neque dis quam. Malesuada morbi diam proin volutpat nulla erat. Curabitur ultrices tortor viverra dignissim commodo. Interdum.
-    Lorem ipsum dolor sit amet consectetur. Tempus lectus sapien tristique mattis augue fames leo euismod. Curabitur dictum quisque arcu posuere vestibulum euismod turpis. Sed consequat velit donec adipiscing a. Euismod feugiat morbi justo id suspendisse neque dis quam. Malesuada morbi diam proin volutpat nulla erat. Curabitur ultrices tortor viverra dignissim commodo. Interdum`,
-  },
-  {
-    name: "service 5",
-    desc: `Lorem ipsum dolor sit amet consectetur. Tempus lectus sapien tristique mattis augue fames leo euismod. Curabitur dictum quisque arcu posuere vestibulum euismod turpis. Sed consequat velit donec adipiscing a. Euismod feugiat morbi justo id suspendisse neque dis quam. Malesuada morbi diam proin volutpat nulla erat. Curabitur ultrices tortor viverra dignissim commodo. Interdum.
-    Lorem ipsum dolor sit amet consectetur. Tempus lectus sapien tristique mattis augue fames leo euismod. Curabitur dictum quisque arcu posuere vestibulum euismod turpis. Sed consequat velit donec adipiscing a. Euismod feugiat morbi justo id suspendisse neque dis quam. Malesuada morbi diam proin volutpat nulla erat. Curabitur ultrices tortor viverra dignissim commodo. Interdum`,
-  },
-  {
-    name: "service 6",
-    desc: `Lorem ipsum dolor sit amet consectetur. Tempus lectus sapien tristique mattis augue fames leo euismod. Curabitur dictum quisque arcu posuere vestibulum euismod turpis. Sed consequat velit donec adipiscing a. Euismod feugiat morbi justo id suspendisse neque dis quam. Malesuada morbi diam proin volutpat nulla erat. Curabitur ultrices tortor viverra dignissim commodo. Interdum.
-    Lorem ipsum dolor sit amet consectetur. Tempus lectus sapien tristique mattis augue fames leo euismod. Curabitur dictum quisque arcu posuere vestibulum euismod turpis. Sed consequat velit donec adipiscing a. Euismod feugiat morbi justo id suspendisse neque dis quam. Malesuada morbi diam proin volutpat nulla erat. Curabitur ultrices tortor viverra dignissim commodo. Interdum`,
-  },
-];
+import Accordion from "@mui/material/Accordion";
+import AccordionActions from "@mui/material/AccordionActions";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Button from "@mui/material/Button";
+import { FaqData, data } from "./data";
+
 const page = () => {
   const [selectedService, setSelecetedService] = useState(data[0]);
   const handleClick = (index) => {
     setSelecetedService(data[index]);
   };
+  const [expanded, setExpanded] = useState(null);
+
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : null);
+  };
   return (
-    <div className="min-h-fit max-h-screen px-6 flex-col hide-scrollbar md:px-20 top-20 ">
-      <div className="flex flex-col md:flex-row gap-y-8 gap-x-5 pt-20">
+    <div className="w-[100dvw] h-[100dvh] min-h-[100dvh]  px-6 flex-col hide-scrollbar md:px-20 top-20 pt-[30dvh]">
+      <div className="flex flex-col md:flex-row gap-y-8 gap-x-5 items-start">
         <div className="w-full h-100 md:w-[70%] ">
           <img
             src="/warehouse.png"
@@ -50,7 +31,7 @@ const page = () => {
             width={300}
             height={15}
             layout="responsive"
-            className="object-contain w-full h-auto min-h-full"
+            className="object-contain w-full h-full min-h-full"
           />
         </div>
         <div className="bg-[#F4F4F4] md:w-[40%] border rounded-lg flex flex-col h-fit min-h-full max-h-fit pb-2">
@@ -77,11 +58,11 @@ const page = () => {
 
       <div className="flex flex-col md:flex-row gap-y-8 gap-x-5 pt-20">
         <div className="w-full h-100 md:w-[70%]">
-          <h1 className="text-[64px] font-bold">Overview</h1>
+          <h1 className="text-lg md:text-6xl font-bold">Overview</h1>
           <p className="text-justify ">{selectedService.desc}</p>
         </div>
         <div className="bg-black md:w-[40%] border rounded-lg flex flex-col h-fit min-h-full max-h-fit pb-2 ">
-          <div className="pl-30 ml-auto mr-auto flex mt-4 items-center justify-center w-12 h-12 bg-white rounded-full">
+          <div className="ml-auto mr-auto flex mt-4 items-center justify-center w-12 h-12 bg-white rounded-full">
             <GiRotaryPhone className="text-black w-6 h-6" />
           </div>
           <div className="mx-auto max-h-50 py-3">
@@ -93,6 +74,59 @@ const page = () => {
           <div className="mx-auto max-h-50 py-3">
             <p className="text-lg text-white ">Call us any time</p>
           </div>
+        </div>
+      </div>
+
+      {/* faq section */}
+      <div className="flex flex-col justify-start w-full md:max-w-[60%] py-10">
+        <h1 className="text-lg md:text-6xl  font-bold">FAQ</h1>
+        <p className="w-full md:max-w-[90%] py-7">
+          Lorem ipsum dolor sit amet consectetur. Varius risus montes morbi
+          ultrices sed ut. Lorem.Lorem ipsum dolor sit amet consectetur. Varius
+          risus montes morbi ultrices sed ut. Lorem.
+        </p>
+
+        <div className="flex flex-col gap-y-3">
+          {FaqData.map((item, index) => (
+            <Accordion
+              key={index}
+              expanded={expanded === `panel${index}`}
+              onChange={handleChange(`panel${index}`)}
+              style={{
+                marginBottom: "10px",
+                border: "1px solid #ccc",
+              }}
+            >
+              <AccordionSummary
+                expandIcon={
+                  <ExpandMoreIcon
+                    style={{
+                      color: expanded === `panel${index}` ? "white" : "initial",
+                    }}
+                  />
+                }
+                aria-controls={`panel${index}-content`}
+                id={`panel${index}-header`}
+                style={{
+                  backgroundColor:
+                    expanded === `panel${index}` ? "black" : "#f1f1f1",
+                  borderBottom: "1px solid #ccc",
+                  color: expanded === `panel${index}` ? "white" : "initial",
+                  padding: "10px", // Add additional styles as needed
+                }}
+              >
+                {item.ques}
+              </AccordionSummary>
+              <AccordionDetails
+                style={{
+                  backgroundColor: "#f9f9f9",
+                  padding: "10px", // Add additional styles as needed
+                }}
+              >
+                {item.ans}
+              </AccordionDetails>
+            </Accordion>
+          ))}
         </div>
       </div>
     </div>
