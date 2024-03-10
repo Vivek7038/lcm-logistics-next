@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import Link from "next/link";
 const data = [
@@ -23,14 +23,21 @@ const data = [
 ];
 const Navbar = () => {
   const [color, setColor] = useState(true);
-  const changeColor = () => {
-    if (typeof window !== 'undefined' && window.scrollY >= 90) {
-      setColor(true);
-    } else {
-      setColor(false);
-    }
-  };
-  window.addEventListener("scroll", changeColor);
+  useEffect(() => {
+    const changeColor = () => {
+      if (typeof window !== "undefined" && window.scrollY >= 90) {
+        setColor(true);
+      } else {
+        setColor(false);
+      }
+    };
+
+    window.addEventListener("scroll", changeColor);
+
+    return () => {
+      window.removeEventListener("scroll", changeColor);
+    };
+  }, []);
   return (
     <main
       className={`z-[9999] min-h-30  fixed  w-[100vw]  text-white ${
