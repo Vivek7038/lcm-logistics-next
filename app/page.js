@@ -92,7 +92,7 @@ Base`,
                     </div>
 
                     <div className={"w-12 h-0 border-2 border-black border-solid flex justify-center md:block"}></div>
-                    <div className={"md:grid xl:grid-cols-3 md:grid-cols-2 gap-5 w-[100%] mt-4 gap-x-2 flex overflow-scroll "}>
+                    <div className={"md:grid xl:grid-cols-3 md:grid-cols-2 gap-5 w-[100%] mt-4 gap-x-2 flex overflow-scroll md:overflow-hidden"}>
                         {
                             [1, 2, 3, 4, 5, 6].map((ele) => {
                                     return (<div key={ele} className={"col-span-1 row-span-1 relative"}><Card/></div>)
@@ -113,7 +113,7 @@ Base`,
                     WHY CHOOSE US?
                 </div>
 
-                <div className={"md:grid md:grid-cols-2 xl:gap-x-44 xl:gap-y-12 md:gap-x-12 md:gap-y-8 my-12 flex overflow-scroll w-[95%] gap-4 ml-4 md:ml-0 "}>
+                <div className={"md:grid md:grid-cols-2 xl:gap-x-44 xl:gap-y-12 md:gap-x-12 md:gap-y-8 my-12 flex overflow-scroll md:overflow-hidden w-[95%] md:w-auto gap-4 ml-4 md:ml-0 "}>
                     {chooseus.map((ele,index) => {
                         return (<div><Choosecard  key={index} title={ele.title} desc={ele.desc} svg={ele.svg}/></div>)
                     })}
