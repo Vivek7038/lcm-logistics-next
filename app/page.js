@@ -130,16 +130,16 @@ Base`,
 
         {/*    ---------------------About us*/}
 <div className={"flex justify-center w-[100%]"}>
-    <div className={"xl:w-[70%] md:w-[95%] relative"}>
-        <img src={"bubblebg.png"} alt={""} className={"absolute h-40 w-40 -z-10 xl:top-20 xl:-left-20 md:top-32 md:-left-2"} />
+    <div className={"xl:w-[70%] md:w-[95%] relative w-[98%]"}>
+        <img src={"bubblebg.png"} alt={""} className={"absolute h-40 w-40 -z-10 xl:top-20 xl:-left-20 md:top-32 md:-left-2 hidden md:block" } />
 
         <div className={"line w-[100%] h-0 border-[1px] border-solid border-gray-500 mt-4 mb-20"}></div>
-        <div className={"font-bold xl:text-6xl md:text-5xl md:flex md:flex-col md:items-center xl:block"}>
+        <div className={"font-bold xl:text-6xl md:text-5xl md:flex md:flex-col md:items-center xl:block flex flex-col items-center flex-wrap"}>
             ABOUT US
             <div className={"xl:hidden mt-2 text-sm font-normal"}>We are logistics company based in <a className={"font-bold italic"}>BANGALORE</a></div>
         </div>
 
-        <div className={"grid grid-cols-2 my-12 font-medium"}>
+        <div className={"md:grid md:grid-cols-2 my-12 font-medium"}>
             <div className={"xl:w-[89%]"}>
                 <div className={"md:hidden xl:block"}>We are logistics company based in <a className={"font-bold italic"}>BANGALORE</a></div>
 
@@ -155,19 +155,19 @@ Base`,
                         vehicles available on call.</p>
                 </div>
                 <div className={"w-[100%] my-8 flex justify-between"}>
-                    <div><p className={"text-4xl"}><a className={"font-bold text-6xl"}>15</a>Yrs</p>
+                    <div><p className={"md:text-4xl text-2xl"}><a className={"font-bold md:text-6xl text-3xl"}>15</a>Yrs</p>
                         <p>Entrepreneurial stint</p>
                     </div>
-                    <div><p className={"text-4xl"}><a className={"font-bold text-6xl"}>25</a>k</p>
+                    <div><p className={"md:text-4xl text-2xl"}><a className={"font-bold md:text-6xl text-3xl"}>25</a>k</p>
                         <p>Serving over pincode</p>
                     </div>
                 </div>
-                <button className={"text-white bg-black p-4 rounded-2xl"}>Learn more</button>
+                <button className={"text-white bg-black p-4 rounded-2xl ml-[35%] md:ml-0"}>Learn more</button>
             </div>
 
 
-            <div className={"h-[100%]  relative"}>
-                <img src={"bubblebg.png"} alt={""} className={"absolute h-40 w-40 -z-10 2xl:bottom-28 md:bottom-12 xl:-right-20 md:right-2"}/>
+            <div className={"h-[100%] mt-4 md:mt-0  relative"}>
+                <img src={"bubblebg.png"} alt={""} className={"absolute h-40 w-40 -z-10 2xl:bottom-28 md:bottom-12 xl:-right-20 md:right-2 hidden md:block"}/>
                 <img src={"./Aboutus_vdo.png"} alt={"img"}/>
             </div>
         </div>
