@@ -9,8 +9,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Button from "@mui/material/Button";
-import { FaqData, data } from "./data.js";
-
+import { FaqData, data } from "../../data.js";
 const page = () => {
   const [selectedService, setSelecetedService] = useState(data[0]);
   const handleClick = (index) => {
