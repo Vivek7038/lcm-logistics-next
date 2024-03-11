@@ -1,5 +1,6 @@
 import ProfileCard from "@/app/_components/ProfileCard";
 import TimelineCard from "@/app/_components/TimelineCard";
+import Timeline from "@/app/_components/Timeline";
 import { Profiledata } from "@/app/data";
 import React from "react";
 import { ImQuotesLeft } from "react-icons/im";
@@ -50,9 +51,12 @@ const Page = () => {
           <h1 className="md:text-6xl text-4xl  text-black font-bold my-3">
             From Routes to Revenue: A Three-Year Overview
           </h1>
-          <div>
-            <TimelineCard />
+          <div className="flex flex-col">
+            {/* <TimelineCard /> */}
           </div>
+        </div>
+        <div className="w-full max-w-[100dvw]">
+        <Timeline />
         </div>
 
         {/* team */}
@@ -69,8 +73,11 @@ const Page = () => {
           {/* profile cards */}
           <div className="md:grid  xl:grid-cols-3 md:grid-cols-2 gap-5 w-[100%] mt-4 gap-x-2 flex overflow-scroll md:overflow-hidden">
             {Profiledata.map((item, index) => (
-              <div key={index} className={"col-span-1 row-span-1 relative border-0"}>
-                <ProfileCard item={item}/>{" "}
+              <div
+                key={index}
+                className={"col-span-1 row-span-1 relative border-0"}
+              >
+                <ProfileCard item={item} />{" "}
               </div>
             ))}
           </div>
