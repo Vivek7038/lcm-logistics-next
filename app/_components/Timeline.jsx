@@ -14,10 +14,10 @@ const Timeline = () => {
       <VerticalTimeline lineColor={"black"}>
        {TimeLineData.map((item,index)=>(
                <VerticalTimelineElement
-               className="vertical-timeline-element--work"
+               className='vertical-timeline-element--work  dark:bg-dark_bg '
                contentStyle={{}}
                contentArrowStyle={{}}
-               iconStyle={{ background: "white",transform: index % 2 === 0 ? "scaleX(-1)" : "none"   }}
+               iconStyle={{ background: "white",transform: index % 2 === 0 ? "scaleX(-1)" : "none" }}
                visible={true}
                icon={<LocalShippingIcon />}
                style={{ marginLeft: "auto", marginRight: "auto", maxWidth: "900px", width: "100%" }}

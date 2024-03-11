@@ -18,8 +18,8 @@ module.exports = {
       colors:{
         light_bg:"#FFFFFF",
         dark_bg:"#2C2C2C",
-        light_txt:"#000000",
-        dark_txt:"#FFFFFF",
+        light_txt:"white",
+        dark_txt:"black",
         footer:"#838383"
       },
     },
