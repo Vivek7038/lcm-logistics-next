@@ -4,19 +4,19 @@ import Link from 'next/link'
 export default function Footer(){
     return(
         <div className={"w-[100%]"}>
-            <div className={"lg:flex w-[100%] bg-black lg:p-12 lg:justify-between"}>
+            <div className={"lg:flex w-[100%] bg-black lg:py-12 lg:px-40 lg:justify-between"}>
                 <div className={"text-white xl:w-[20%]"}>
-                    <p className={"font-medium xl:text-xl"}>LCM LOGISTICS.PVT.LTD</p>
+                    <p className={"font-medium xl:text-xl mb-4"}>LCM LOGISTICS.PVT.LTD</p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
 
                     </p>
                 </div>
-                <div className={"w-[0] h-[100%] border-white border-solid border-[1px]"}>
+                <div className={"w-[0] h-10] border-white border-solid border-[1px]"}>
 
                 </div>
                 <div>
-                    <ul className={"list-none text-gray-500"}>
+                    <ul className={"list-none text-gray-500 flex flex-col gap-6"}>
                         <li><Link href={""}>Home</Link></li>
                         <li><Link href={""}>About</Link></li>
                         <li><Link href={""}>Contact</Link></li>
@@ -25,15 +25,15 @@ export default function Footer(){
 
                 </div>
                 <div>
-                    <ul className={"list-none text-gray-500"}>
+                    <ul className={"list-none text-gray-500 flex flex-col gap-6"}>
                         <li><Link href={""}>Privacy Policy</Link></li>
                         <li><Link href={""}>Terms of Use</Link></li>
                     </ul>
                 </div>
-                <div className={"w-72] text-white"}>
+                <div className={"w-72] text-white flex flex-col gap-4"}>
                     <p>Join Group</p>
                     <div className={"flex"}>
-                        <input className={"w-60 px-4 h-12 outline-0 border-0"} type={"text"}
+                        <input className={"w-60 px-4 h-12 outline-0 border-0 text-black"} type={"email"}
                                placeholder={"example@gmail.com"}/>
                         <button className={"h-12 px-8 text-white bg-red-700"}>Join</button>
                     </div>
