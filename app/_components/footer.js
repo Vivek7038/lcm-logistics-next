@@ -4,8 +4,8 @@ import Link from 'next/link'
 export default function Footer(){
     return(
         <div className={"w-[100%]"}>
-            <div className={"lg:flex w-[100%] bg-black lg:py-12 lg:px-40 lg:justify-between"}>
-                <div className={"text-white xl:w-[20%]"}>
+            <div className={"flex w-[100%] bg-black lg:py-12 md:py-8 lg:px-40 md:px-4 md:justify-between"}>
+                <div className={"text-white w-[20%]"}>
                     <p className={"font-medium xl:text-xl mb-4"}>LCM LOGISTICS.PVT.LTD</p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
@@ -30,15 +30,15 @@ export default function Footer(){
                         <li><Link href={""}>Terms of Use</Link></li>
                     </ul>
                 </div>
-                <div className={"w-72] text-white flex flex-col gap-4"}>
+                <div className={"lg:w-72 md:w-56 text-white flex flex-col gap-4"}>
                     <p>Join Group</p>
                     <div className={"flex"}>
-                        <input className={"w-60 px-4 h-12 outline-0 border-0 text-black"} type={"email"}
+                        <input className={"lg:w-60  md:w-36 px-4 h-12 outline-0 border-0 text-black"} type={"email"}
                                placeholder={"example@gmail.com"}/>
-                        <button className={"h-12 px-8 text-white bg-red-700"}>Join</button>
+                        <button className={"h-12 lg:px-8 md:px-4 text-white bg-red-700"}>Join</button>
                     </div>
                     <p className={"text-xs"}>Join to stay up to date with latest services and news</p>
-                    <div className={"flex w-[100%] justify-between"}>
+                    <div className={"flex w-[90%] justify-between"}>
                         <a href={""}>
                             <svg width="32" height="32" viewBox="0 0 32 29" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -80,6 +80,9 @@ export default function Footer(){
 
                 </div>
 
+            </div>
+            <div className={"flex w-[100%] text-white justify-center py-4 bg-stone-950 text-sm"}>
+                Copyright@2024 Draft LLC.All right reserved
             </div>
         </div>
     )
