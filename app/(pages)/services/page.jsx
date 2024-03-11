@@ -21,7 +21,7 @@ const Page = () => {
     setExpanded(isExpanded ? panel : null);
   };
   return (
-    <div className="w-[100dvw] h-[100dvh] min-h-[100dvh] flex-col hide-scrollbar  ">
+    <div className="w-[100dvw] h-[100dvh] min-h-[100dvh] flex-col hide-scrollbar relative">
       <div className="bg-[url('../public/Bg-home.png')] bg-cover flex flex-col justify-center pt-[30dvh] min-w-[100dvw] min-h-[80dvh] ">
         <h1 className="md:text-6xl text-4xl text-center text-white font-bold">
           {selectedService.name}

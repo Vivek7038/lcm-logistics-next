@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Footer(){
     return(
-        <div className={"w-[100%]"}>
+        <div className={"w-[100%] relative"}>
             <div className={"flex w-[100%] bg-black lg:py-12 py-6 md:py-8 lg:px-40 md:px-4 md:justify-between flex-col md:flex-row items-center"}>
                 <div className={"text-white w-[88%] md:w-[20%] lg:w-[30%] flex md:block flex-col items-center"}>
                     <p className={"font-medium xl:text-xl mb-4  "}>LCM LOGISTICS.PVT.LTD</p>
