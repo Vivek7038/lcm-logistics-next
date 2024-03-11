@@ -6,9 +6,9 @@ export default function Card({item}) {
         router.push("/services")
     }
     return (
-        <div className={"w-[355px] h-[410px]  relative shadow-lg border rounded-md"}>
+        <div className={"w-[355px] h-[410px]  relative shadow-lg bg-white dark:  rounded-md"}>
             <div className="">
-                <img src={"services.png"} alt={"img"} className={"h-[203px] w-[100%] border rounded-md "} />
+                <img src={"services.png"} alt={"img"} className={"h-[203px] w-[100%]  rounded-md "} />
             </div>
             <div className={"p-4"}>
                 <p className={"text-xl font-medium my-2"}>

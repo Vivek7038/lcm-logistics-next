@@ -60,7 +60,7 @@ Base`,
 
     // -------------------------------------------
     return (
-        <div>
+        <div className={"bg-white dark:bg-dark_bg"}>
             <div
                 className={"w-[100dvw] h-[100dvh] bg-[url('../public/Bg-home.png')] bg-cover flex justify-center pt-[30dvh]"}>
                 <div className={"flex flex-col items-center text-white w-[80%] md:w-[100%]"}>
@@ -84,7 +84,7 @@ Base`,
 
 
             {/*    --------------------------services*/}
-            <div className={" w-[100vw] py-12 flex flex-col items-center max-w-[100vw] "}>
+            <div className={" w-[100vw] py-12 flex flex-col items-center max-w-[100vw]  "}>
                 <div className={"w-[80%]"}>
                     <div className={"text-1xl flex justify-center md:block"}>
                         LOGISTIC DELIVERY
