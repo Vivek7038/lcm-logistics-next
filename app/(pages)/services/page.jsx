@@ -21,7 +21,7 @@ const Page = () => {
     setExpanded(isExpanded ? panel : null);
   };
   return (
-    <div className="w-[100dvw] h-auto min-h-[100dvh] flex-col hide-scrollbar relative">
+    <div className="w-[100dvw] h-auto min-h-[100dvh] flex-col hide-scrollbar relative dark:bg-dark_bg">
       <div className="bg-[url('../public/Bg-home.png')] bg-cover flex flex-col justify-center pt-[30dvh] min-w-[100dvw] min-h-[80dvh] ">
         <h1 className="md:text-6xl text-4xl text-center text-white font-bold">
           {selectedService.name}
@@ -74,7 +74,7 @@ const Page = () => {
           </div>
           <div className="bg-black md:w-[40%] border rounded-lg flex flex-col h-fit min-h-full md:min-h-[300px]  pb-2 justify-between ">
             <div className="ml-auto mr-auto flex mt-4 items-center justify-center w-12 h-12 bg-white rounded-full">
-              <GiRotaryPhone className="text-black w-6 h-6" />
+              <GiRotaryPhone className="text-black w-6 h-6 dark:light_txt" />
             </div>
             <div className="mx-auto max-h-50 py-3">
               <p className="text-lg text-white ">Best Logistics services</p>
