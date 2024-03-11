@@ -6,7 +6,7 @@ const TimelineCard = ({item}) => {
        <div className='border-r-[1px] border-black py-7 my-2'>
               <h1 className='font-bold text-3xl md:text-5xl'>{item.date}</h1>
        </div>
-       <div className='flex flex-col items-center justify-between py-4'>
+       <div className='flex flex-col items-center justify-between py-4 px-2'>
        <h1 className='text-md text-[#838383] text-wrap text-center'>Delivery made: {item.Delivery}</h1>
        <h1 className='text-md text-[#838383] text-wrap text-center'>revenue : {item.revenue}</h1>
        </div>
