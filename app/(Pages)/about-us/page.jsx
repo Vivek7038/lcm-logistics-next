@@ -21,22 +21,22 @@ const Page = () => {
               Our Misson and Vision
             </h1>
             <div>
-              <span className="absolute top-12 -left-14 z-1 p-0">
+              <span className="-top-13 -left-14 md:hidden lg:inline-block absolute lg:top-12 lg:-left-14 z-1 p-0">
                 <ImQuotesLeft
                   color="#83838380"
                   style={{ width: "60px", height: "70px" }}
                 />
               </span>
-              <p className="relative text-black z-[999] p-0">
+              <p className="relative text-black z-[999] p-0 text-wrap">
                 Lorem ipsum dolor sit amet consectetur. Lorem in urna euismod
                 nec urna pretium purus commodo ultricies. Ultricies sapien enim
                 a urna phasellus interdum turpis egestas eget. Diam sit dui ut
                 aenean nunc viverra tellus elementum aliquam. Elementum
                 tincidunt urna commodo sapien eget elementum
               </p>
-              <span className="absolute -bottom-2 -right-11 z-1 p-0">
+              <span className="-bottom-2 -right-8 md:hidden lg:inline-block  absolute lg:-bottom-2 lg:-right-11 z-1 p-0">
                 <ImQuotesRight
-                  color="#83838380"
+                  color="#05040480"
                   style={{ width: "60px", height: "70px" }}
                 />
               </span>
