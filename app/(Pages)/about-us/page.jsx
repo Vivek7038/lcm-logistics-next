@@ -9,14 +9,14 @@ import { ImQuotesRight } from "react-icons/im";
 const Page = () => {
   return (
 
-    <div className="w-[100dvw] h-[100dvh] min-h-[100dvh] flex-col hide-scrollbar  ">
+    <div className="w-[100dvw] h-auto  min-h-[100dvh] flex-col hide-scrollbar  ">
       <div className="bg-[url('../public/Bg-home.png')] bg-cover flex flex-col justify-center pt-[30dvh] min-w-[100dvw] min-h-[80dvh] ">
         <h1 className="md:text-6xl text-4xl text-center text-white font-bold">
           About Us
         </h1>
       </div>
       {/*  seperator*/}
-      <div className="flex flex-col px-10 md:px-20 ">
+      <div className="flex flex-col px-10 md:px-20 w-[100dvw] h-auto  min-h-[100dvh]">
         {/* about us quote */}
         <div className="w-full flex flex-col px-50 justify-center items-center z-[99]">
           <div className="max-w-[70%] my-5 relative">
