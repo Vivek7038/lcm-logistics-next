@@ -34,10 +34,10 @@ const Navbar = () => {
 
     if (body.classList.contains('dark')) {
       body.classList.remove('dark')
-      console.log(1)
+
     } else {
       body.classList.add('dark')
-      console.log(2)
+
     }
 
   }
