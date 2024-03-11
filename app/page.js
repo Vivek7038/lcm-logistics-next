@@ -171,7 +171,7 @@ Base`,
                             message, and we'll respond within 24 hours</p>
                     </div>
                     <div
-                        className={"xl:w-[100%] md:w-[80%] md:ml-6  md:p-0 h-[0] border-[1px] border-gray-500 border-solid my-8"}></div>
+                        className={"xl:w-[100%] md:w-[80%] md:ml-6 hidden md:block md:p-0 h-[0] border-[1px] border-gray-500 border-solid my-8"}></div>
                     <div className="w-[100%] p-4 md:p-0">
                         <form className={"xl:w-[100%] md:w-[80%] md:ml-6 flex flex-col xl:gap-10 md:gap-6"}>
                             <div className={"grid grid-cols-2 gap-4"}>

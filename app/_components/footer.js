@@ -12,7 +12,7 @@ export default function Footer(){
 
                     </p>
                 </div>
-                <div className={"w-[0] h-10] border-white border-solid border-[1px] hidden md:block"}>
+                <div className={"w-[20] h-40 border-white border-solid border-[1px] hidden md:block"}>
 
                 </div>
                 <div className={"flex md:hidden my-6 w-[61%] justify-between"}>
