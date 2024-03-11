@@ -18,6 +18,7 @@ module.exports = {
       colors:{
         light_bg:"#FFFFFF",
         dark_bg:"#2C2C2C",
+        dark_cards:"#383838",
         light_txt:"white",
         dark_txt:"black",
         footer:"#838383"
