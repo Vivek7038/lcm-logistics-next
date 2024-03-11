@@ -21,7 +21,7 @@ const Page = () => {
     setExpanded(isExpanded ? panel : null);
   };
   return (
-    <div className="w-[100dvw] h-[100dvh] min-h-[100dvh] flex-col hide-scrollbar  ">
+    <div className="w-[100dvw] h-[100dvh] min-h-[100dvh] flex-col hide-scrollbar  dark:bg-[#2C2C2C]">
       <div className="bg-[url('../public/Bg-home.png')] bg-cover flex flex-col justify-center pt-[30dvh] min-w-[100dvw] min-h-[80dvh] ">
         <h1 className="md:text-6xl text-4xl text-center text-white font-bold">
           {selectedService.name}
@@ -31,7 +31,7 @@ const Page = () => {
         </div>
       </div>
       {/*  seperator*/}
-      <div className="flex flex-col px-10 md:px-20 ">
+      <div className="flex flex-col px-10 md:px-20 dark:bg-[#2C2C2C]">
         <div className="flex flex-col md:flex-row gap-y-8 gap-x-5 items-start pt-[10dvh]">
           <div className="w-full h-100 md:w-[70%] ">
             <img
@@ -43,12 +43,12 @@ const Page = () => {
               className="object-contain w-full h-full min-h-full"
             />
           </div>
-          <div className="bg-[#F4F4F4] w-full md:w-[40%] border rounded-lg flex flex-col h-fit min-h-full max-h-fit pb-2">
+          <div className="bg-[#F4F4F4] w-full md:w-[40%] border rounded-lg flex flex-col h-fit min-h-full max-h-fit pb-2 dark:bg-black dark:text-white">
             <h1 className="text-[16px] font-bold px-4 py-8">All Serivces</h1>
             <div className="px-8 flex flex-col gap-y-2 py-2">
               {data.map((item, index) => (
                 <div
-                  className="flex flex-row justify-between gap-x-2 max-w-70  border-black border-[2px] p-3 cursor-pointer"
+                  className="flex flex-row justify-between gap-x-2 max-w-70  border-black border-[2px] p-3 cursor-pointer dark:bg-[#2C2C2C] dark:text-white"
                   key={index}
                   onClick={() => handleClick(index)}
                 >
@@ -74,7 +74,7 @@ const Page = () => {
           </div>
           <div className="bg-black md:w-[40%] border rounded-lg flex flex-col h-fit min-h-full md:min-h-[300px]  pb-2 justify-between ">
             <div className="ml-auto mr-auto flex mt-4 items-center justify-center w-12 h-12 bg-white rounded-full">
-              <GiRotaryPhone className="text-black w-6 h-6" />
+              <GiRotaryPhone className="text-black w-6 h-6 dark:text-white" />
             </div>
             <div className="mx-auto max-h-50 py-3">
               <p className="text-lg text-white ">Best Logistics services</p>
