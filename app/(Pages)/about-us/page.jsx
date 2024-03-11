@@ -1,7 +1,8 @@
 import ProfileCard from "@/app/_components/ProfileCard";
 import TimelineCard from "@/app/_components/TimelineCard";
 import React from "react";
-
+import { ImQuotesLeft } from "react-icons/im";
+import { ImQuotesRight } from "react-icons/im";
 
 const Page = () => {
   return (
@@ -14,19 +15,31 @@ const Page = () => {
       {/*  seperator*/}
       <div className="flex flex-col px-10 md:px-20 ">
         {/* about us quote */}
-        <div className="w-full flex flex-col px-50 justify-center items-center">
-          <div className="max-w-[70%] my-5">
+        <div className="w-full flex flex-col px-50 justify-center items-center z-[99]">
+          <div className="max-w-[70%] my-5 relative">
             <h1 className="md:text-6xl text-4xl  text-black font-bold mb-6">
               Our Misson and Vision
             </h1>
             <div>
-              <p className="relative text-black ">
+              <span className="absolute top-12 -left-14 z-1 p-0">
+                <ImQuotesLeft
+                  color="#83838380"
+                  style={{ width: "60px", height: "70px" }}
+                />
+              </span>
+              <p className="relative text-black z-[999] p-0">
                 Lorem ipsum dolor sit amet consectetur. Lorem in urna euismod
                 nec urna pretium purus commodo ultricies. Ultricies sapien enim
                 a urna phasellus interdum turpis egestas eget. Diam sit dui ut
                 aenean nunc viverra tellus elementum aliquam. Elementum
                 tincidunt urna commodo sapien eget elementum
               </p>
+              <span className="absolute -bottom-2 -right-11 z-1 p-0">
+                <ImQuotesRight
+                  color="#83838380"
+                  style={{ width: "60px", height: "70px" }}
+                />
+              </span>
             </div>
           </div>
         </div>
@@ -37,7 +50,7 @@ const Page = () => {
             From Routes to Revenue: A Three-Year Overview
           </h1>
           <div>
-           <TimelineCard />
+            <TimelineCard />
           </div>
         </div>
 
