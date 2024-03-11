@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -9,17 +9,37 @@ import TimelineCard from "./TimelineCard";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import { TimeLineData } from "../data";
 const Timeline = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  // useEffect(() => {
+  //   const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+  //   const handleDarkModeChange = (event) => {
+  //     setIsDarkMode(event.matches);
+  //   };
+
+  //   // Initial check
+  //   handleDarkModeChange(mediaQuery);
+
+  //   // Listen for changes
+  //   mediaQuery.addListener(handleDarkModeChange);
+
+  //   return () => {
+  //     mediaQuery.removeListener(handleDarkModeChange);
+  //   };
+  // }, []);
+
   return (
     <div>
-      <VerticalTimeline lineColor={"black"}>
+      {/* <VerticalTimeline lineColor={isDarkMode ? 'white' : 'black'} >
        {TimeLineData.map((item,index)=>(
                <VerticalTimelineElement
                className='vertical-timeline-element--work  dark:bg-dark_bg '
                contentStyle={{}}
                contentArrowStyle={{}}
-               iconStyle={{ background: "white",transform: index % 2 === 0 ? "scaleX(-1)" : "none" }}
+               iconStyle={{background:"white", transform: index % 2 === 0 ? "scaleX(-1)" : "none" }}
                visible={true}
-               icon={<LocalShippingIcon />}
+               icon={<LocalShippingIcon className="dark:text-black "/>}
                style={{ marginLeft: "auto", marginRight: "auto", maxWidth: "900px", width: "100%" }}
                key={index}
              >
@@ -27,7 +47,58 @@ const Timeline = () => {
                
              </VerticalTimelineElement>
        ))}
-      </VerticalTimeline>
+      </VerticalTimeline> */}
+      {isDarkMode ? (
+        <VerticalTimeline style={{ background: "transparent" }} >
+          {TimeLineData.map((item, index) => (
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work  dark:bg-dark_bg "
+              contentStyle={{}}
+              contentArrowStyle={{}}
+              iconStyle={{
+                background: "white",
+                transform: index % 2 === 0 ? "scaleX(-1)" : "none",
+              }}
+              visible={true}
+              icon={<LocalShippingIcon className="dark:text-black " />}
+              style={{
+                marginLeft: "auto",
+                marginRight: "auto",
+                maxWidth: "900px",
+                width: "100%",
+              }}
+              key={index}
+            >
+              <TimelineCard item={item} />
+            </VerticalTimelineElement>
+          ))}
+        </VerticalTimeline>
+      ) : (
+        <VerticalTimeline lineColor={isDarkMode ? "white" : "black"}>
+          {TimeLineData.map((item, index) => (
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work  dark:bg-dark_bg "
+              contentStyle={{}}
+              contentArrowStyle={{}}
+              iconStyle={{
+                background: "white",
+                transform: index % 2 === 0 ? "scaleX(-1)" : "none",
+              }}
+              visible={true}
+              icon={<LocalShippingIcon className="dark:text-black " />}
+              style={{
+                marginLeft: "auto",
+                marginRight: "auto",
+                maxWidth: "900px",
+                width: "100%",
+              }}
+              key={index}
+            >
+              <TimelineCard item={item} />
+            </VerticalTimelineElement>
+          ))}
+        </VerticalTimeline>
+      )}
     </div>
   );
 };
