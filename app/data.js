@@ -51,4 +51,35 @@ export const data = [
        },
      ];
 
-    
+     export const Profiledata = [
+      {
+          name: "Alen Wallker",
+          role: "Product manager",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nisi quod",
+      },
+      {
+          name: "Arlene McCoy",
+          role: "Product manager",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nisi quod",
+      },
+      {
+          name: "Alen Wallker",
+          role: "Product manager",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nisi quod",
+      },
+      {
+          name: "Alen Wallker",
+          role: "Product manager",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nisi quod",
+      },
+      {
+          name: "Alen Wallker",
+          role: "Product manager",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nisi quod",
+      },
+      {
+          name: "Alen Wallker",
+          role: "Product manager",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nisi quod",
+      },
+  ];

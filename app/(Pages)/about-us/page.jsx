@@ -1,5 +1,6 @@
 import ProfileCard from "@/app/_components/ProfileCard";
 import TimelineCard from "@/app/_components/TimelineCard";
+import { Profiledata } from "@/app/data";
 import React from "react";
 import { ImQuotesLeft } from "react-icons/im";
 import { ImQuotesRight } from "react-icons/im";
@@ -66,13 +67,12 @@ const Page = () => {
             </p>
           </div>
           {/* profile cards */}
-          <div className="flex flex-row  flex-wrap md:flex-wrap gap-x-5 max-w-[100dvw]">
-            <ProfileCard />
-            <ProfileCard />
-            <ProfileCard />
-            <ProfileCard />
-            <ProfileCard />
-            <ProfileCard />
+          <div className="md:grid  xl:grid-cols-3 md:grid-cols-2 gap-5 w-[100%] mt-4 gap-x-2 flex overflow-scroll md:overflow-hidden">
+            {Profiledata.map((item, index) => (
+              <div key={index} className={"col-span-1 row-span-1 relative border-0"}>
+                <ProfileCard item={item}/>{" "}
+              </div>
+            ))}
           </div>
         </div>
       </div>
