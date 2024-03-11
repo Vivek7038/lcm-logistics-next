@@ -85,11 +85,11 @@ Base`,
 
             {/*    --------------------------services*/}
             <div className={" w-[100vw] py-12 flex flex-col items-center max-w-[100vw]  "}>
-                <div className={"w-[80%]"}>
-                    <div className={"text-1xl flex justify-center md:block"}>
+                <div className={"w-[80%] "}>
+                    <div className={"text-1xl flex justify-center md:block dark:text-light_txt"}>
                         LOGISTIC DELIVERY
                     </div>
-                    <div className={"font-medium text-3xl my-2 flex justify-center md:block"}>
+                    <div className={"font-medium text-3xl my-2 flex justify-center md:block dark:text-light_txt"}>
                         OUR SERVICES
                     </div>
 
@@ -111,7 +111,7 @@ Base`,
 
             {/*    --------------------Why choose us*/}
             <div className={" w-[100vw] my-4 max-w-[100vw] py-12 flex flex-col items-center "}>
-                <div className={"w-[100%] flex justify-center font-bold xl:text-6xl md:text-5xl text-3xl"}>
+                <div className={"w-[100%] flex justify-center font-bold xl:text-6xl md:text-5xl text-3xl dark:text-light_txt"}>
 
                     WHY CHOOSE US?
                 </div>
@@ -134,7 +134,7 @@ Base`,
             </div>
 
             {/*    ---------------------About us*/}
-            <div className={"flex justify-center w-[100%]"}>
+            <div className={"flex justify-center w-[100%] px-4 md:px-0 dark:text-light_txt"}>
                 <div className={"xl:w-[70%] md:w-[95%] relative w-[98%]"}>
                     <img src={"bubblebg.png"} alt={""}
                          className={"absolute h-40 w-40 -z-10 xl:top-20 xl:-left-20 md:top-32 md:-left-2 hidden md:block"}/>
@@ -155,14 +155,14 @@ Base`,
             </div>
             {/*    ---------------------------Contact Form----------*/}
 
-            <div className={"md:flex w-[100%] h-[70vh]] mt-8"}>
+            <div className={"md:flex w-[100%] h-[70vh]] mt-8 dark:text-light_txt"}>
                 <div
                     className={" hidden md:block w-[30vw] h-[95dvh] bg-[url('../public/contactbg.png')] bg-cover text-white"}>
                     <div className={"ml-8 mt-10"}><p>Get in Touch</p>
                         <p className={"mt-8 text-4xl font-bold"}>Reach Out to Us</p></div>
                 </div>
                 <div
-                    className={"text-white md:text-black flex flex-col mx-auto bg-[url('../public/contactbg.png')] md:bg-none bg-cover"}>
+                    className={"text-white md:text-black flex flex-col mx-auto bg-[url('../public/contactbg.png')] md:bg-none bg-cover md:dark:text-light_txt"}>
                     <div className={"font-medium text-3xl flex justify-center mb-8"}>
                         Contact Form
                     </div>
