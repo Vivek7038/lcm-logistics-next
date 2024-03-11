@@ -56,30 +56,36 @@ export const data = [
           name: "Alen Wallker",
           role: "Product manager",
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nisi quod",
+          img:"./user-profile.png"
       },
       {
           name: "Arlene McCoy",
           role: "Product manager",
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nisi quod",
+          img:"./user-profile.png"
       },
       {
           name: "Alen Wallker",
           role: "Product manager",
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nisi quod",
+          img:"./user-profile.png"
       },
       {
           name: "Alen Wallker",
           role: "Product manager",
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nisi quod",
+          img:"./user-profile.png"
       },
       {
           name: "Alen Wallker",
           role: "Product manager",
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nisi quod",
+          img:"./user-profile.png"
       },
       {
           name: "Alen Wallker",
           role: "Product manager",
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nisi quod",
+          img:"./user-profile.png"
       },
   ];

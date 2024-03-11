@@ -4,10 +4,10 @@ const ProfileCard = ({ item }) => {
   return (
     <div className="w-[355px] h-[410px] relative border-0 rounded-md ">
       <img
-        src={"./BannerServices.jpg"}
+        src={item.img}
         alt={"logo"}
         // className="h-50 w-full object-contain"
-        className="h-[253px] w-[100%] border rounded-md "
+        className="h-[253px] w-[80%] border rounded-md "
       ></img>
       <h1 className="pt-3  text-xl text-black font-bold">{item.name}</h1>
       <span className="text-md text-grey py-2 ">{item.role}</span>
