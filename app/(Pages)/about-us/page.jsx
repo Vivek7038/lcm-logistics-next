@@ -5,6 +5,7 @@ import { Profiledata } from "@/app/data";
 import React from "react";
 import { ImQuotesLeft } from "react-icons/im";
 import { ImQuotesRight } from "react-icons/im";
+import TimeLineParent from "@/app/_components/TimeLineParent";
 
 const Page = () => {
   return (
@@ -58,7 +59,8 @@ const Page = () => {
           </div>
         </div>
         <div className="w-full max-w-[100dvw]">
-        <Timeline />
+        {/* <Timeline /> */}
+        <TimeLineParent />
         </div>
 
         {/* team */}
