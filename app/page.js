@@ -119,7 +119,7 @@ Base`,
                 <div
                     className={"md:grid md:grid-cols-2 xl:gap-x-44 xl:gap-y-12 md:gap-x-12 md:gap-y-8 my-12 flex overflow-scroll md:overflow-hidden w-[95%] md:w-auto gap-4 ml-4 md:ml-0 "}>
                     {chooseus.map((ele, index) => {
-                        return (<div><Choosecard key={index} title={ele.title} desc={ele.desc} svg={ele.svg}/></div>)
+                        return (<div key={index}><Choosecard key={index} title={ele.title} desc={ele.desc} svg={ele.svg}/></div>)
                     })}
                 </div>
                 <div className={"md:flex w-[100%] justify-center font-medium hidden "}>
