@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import Link from "next/link";
 import CloseIcon from '@mui/icons-material/Close';
+import { useRouter } from "next/navigation";
 const data = [
   {
     label: "Home",
@@ -25,6 +26,11 @@ const data = [
 const Navbar = () => {
   const [color, setColor] = useState(true);
   let [open, setOpen] = useState(false);
+  const router=useRouter();
+  const handleClick=(link)=>{
+    setOpen(false)
+    router.push(link)
+  }
   useEffect(() => {
     const changeColor = () => {
       if (typeof window !== "undefined" && window.scrollY >= 90) {
@@ -53,7 +59,7 @@ const Navbar = () => {
             LCM.PVT.LTD
           </div>
         </div>
-        <div className="z-[999] md:hidden">
+        <div className="z-[999] md:hidden w-12 h-10 text-center">
          {open ?
           <CloseIcon
           onClick={() => setOpen(!open)}
@@ -74,6 +80,7 @@ const Navbar = () => {
               <a
                 href={link.link}
                 className="text-gray-800 hover:text-gray-400 duration-500"
+                onClick={()=>handleClick(link.link)}
               >
                 {link.label}
               </a>
