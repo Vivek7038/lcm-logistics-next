@@ -2,6 +2,7 @@ import Image from "next/image";
 import Card from "@/app/_components/Services-card";
 import Choosecard from "@/app/_components/chooseus-card";
 import AboutUs from "./_components/AboutUs";
+import { data } from "./data";
 
 export default function Home() {
 
@@ -96,8 +97,8 @@ Base`,
                     <div
                         className={"md:grid xl:grid-cols-3 md:grid-cols-2 gap-5 w-[100%] mt-4 gap-x-2 flex overflow-scroll md:overflow-hidden"}>
                         {
-                            [1, 2, 3, 4, 5, 6].map((ele) => {
-                                    return (<div key={ele} className={"col-span-1 row-span-1 relative"}><Card/></div>)
+                            data.map((ele,index) => {
+                                    return (<div key={ele} className={"col-span-1 row-span-1 relative"}><Card item={ele}/></div>)
                                 }
                             )
                         }

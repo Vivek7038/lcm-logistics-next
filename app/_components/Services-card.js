@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation"
-export default function Card(props) {
+export default function Card({item}) {
     const router=useRouter()
     const handleClick=()=>{
         router.push("/services")
@@ -12,10 +12,10 @@ export default function Card(props) {
             </div>
             <div className={"p-4"}>
                 <p className={"text-xl font-medium my-2"}>
-                    WAREHOUSE
+                   {item.name}
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisiciquaerat quisquam cum ratione ea aliquid qui hic recusandae atque corporisng elit. Inventore,
+                  {item.desc.slice(0,100)}{"..."}
                 </p>
                 <a className={"absolute font-medium right-4 bottom-4 cursor-pointer"} onClick={()=>handleClick()}>
                     READ MORE
