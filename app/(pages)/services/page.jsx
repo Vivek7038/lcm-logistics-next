@@ -65,7 +65,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-y-8 gap-x-5 pt-20">
+        <div className="flex flex-col md:flex-row gap-y-8 gap-x-5 pt-20 dark:text-white">
           <div className="w-full h-100 md:w-[70%]">
             <h1 className="md:text-6xl text-4xl font-bold py-10">
               Overview
@@ -89,7 +89,7 @@ const Page = () => {
         </div>
 
         {/* faq section */}
-        <div className="flex flex-col justify-start w-full md:max-w-[60%] py-10">
+        <div className="flex flex-col justify-start w-full md:max-w-[60%] py-10 dark:text-white">
           <h1 className="md:text-6xl text-4xl  font-bold">FAQ</h1>
           <p className="w-full md:max-w-[90%] py-7">
             Lorem ipsum dolor sit amet consectetur. Varius risus montes morbi
