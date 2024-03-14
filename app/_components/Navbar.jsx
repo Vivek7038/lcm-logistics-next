@@ -12,12 +12,12 @@ const data = [
     link: "/",
   },
   {
-    label: "Discover",
-    link: "/discover",
+    label: "Services",
+    link: "/services",
   },
   {
-    label: "Special Deals ",
-    link: "/",
+    label: "Abous Us ",
+    link: "/about-us",
   },
   {
     label: "Contact",
