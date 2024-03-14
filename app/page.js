@@ -97,7 +97,7 @@ Base`,
                         className={"md:grid xl:grid-cols-3 md:grid-cols-2 gap-5 w-[100%] mt-4 gap-x-2 flex overflow-scroll md:overflow-hidden"}>
                         {
                             data.map((ele, index) => {
-                                    return (<div key={ele} className={"col-span-1 row-span-1 relative"}><Card item={ele}/>
+                                    return (<div key={index} className={"col-span-1 row-span-1 relative"} ><Card item={ele} index={index} />
                                     </div>)
                                 }
                             )
