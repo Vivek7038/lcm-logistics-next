@@ -27,9 +27,12 @@ const data = [
 const Navbar = () => {
   const [color, setColor] = useState(true);
   let [open, setOpen] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
+
   const router = useRouter();
 
   function toggleDarkMode() {
+    setIsChecked((prev) => !prev); 
     var body = document.body;
 
     if (body.classList.contains("dark")) {
@@ -72,15 +75,30 @@ const Navbar = () => {
           </div>
         </div>
         <div className={"inline-block md:hidden ml-auto"}>
-          <label className="relative inline-flex items-center cursor-pointer">
-            <input
-              onClick={toggleDarkMode}
-              className="sr-only peer"
-              value=""
-              type="checkbox"
-            />
-            <div className=" md:w-20 md:h-10 w-16 h-8 rounded-full ring-0 peer duration-500 outline-none bg-gray-200 overflow-hidden before:flex before:items-center before:justify-center after:flex after:items-center after:justify-center before:content-['☀️'] before:absolute md:before:h-8 md:before:w-8 before:h-4 before:w-4 before:top-1/2 before:bg-white before:rounded-full before:left-1 before:-translate-y-1/2 before:transition-all before:duration-700 peer-checked:before:opacity-0 peer-checked:before:rotate-90 peer-checked:before:-translate-y-full shadow-lg shadow-gray-400 peer-checked:shadow-lg peer-checked:shadow-gray-700 peer-checked:bg-[#383838] after:content-['🌑'] after:absolute after:bg-[#1d1d1d] after:rounded-full after:top-[4px] after:right-1 after:translate-y-full md:after:w-8 md:after:h-8 after:w-4 after:h-4 after:opacity-0 after:transition-all after:duration-700 peer-checked:after:opacity-100 peer-checked:after:rotate-180 peer-checked:after:translate-y-0"></div>
+        <label className="relative items-center cursor-pointer">
+        <input
+          type="checkbox"
+          name="dark-mode"
+          id="dark-toggle"
+          className="hidden"
+          checked={isChecked}
+          onChange={toggleDarkMode}
+        />
+        <div className="toggle">
+          <label htmlFor="dark-toggle" className="flex items-center cursor-pointer">
+            <div className="relative">
+              <div className="block border-[1px] border-white border-white-900 w-14 h-8 rounded-full"></div>
+              <div
+                className="dot absolute top-1 bg-black bg-white w-6 h-6 rounded-full transition"
+                style={{
+                  transform: isChecked ? 'translateX(100%)' : 'translateX(0%)',
+                  transition: 'transform 0.3s ease',
+                }}
+              ></div>
+            </div>
           </label>
+        </div>
+      </label>
         </div>
         <div className=" z-[999] md:hidden w-12 h-10 text-center ">
           {open ? (
@@ -113,17 +131,35 @@ const Navbar = () => {
             </h1>
           ))}
         </div>
-        <div className={"hidden md:block ml-4"}>
-          <label className="relative inline-flex items-center cursor-pointer">
-            <input
-              onClick={toggleDarkMode}
-              className="sr-only peer"
-              value=""
-              type="checkbox"
-            />
-            <div className=" md:w-20 md:h-10 w-16 h-8 rounded-full ring-0 peer duration-500 outline-none bg-gray-200 overflow-hidden before:flex before:items-center before:justify-center after:flex after:items-center after:justify-center before:content-['☀️'] before:absolute md:before:h-8 md:before:w-8 before:h-4 before:w-4 before:top-1/2 before:bg-white before:rounded-full before:left-1 before:-translate-y-1/2 before:transition-all before:duration-700 peer-checked:before:opacity-0 peer-checked:before:rotate-90 peer-checked:before:-translate-y-full shadow-lg shadow-gray-400 peer-checked:shadow-lg peer-checked:shadow-gray-700 peer-checked:bg-[#383838] after:content-['🌑'] after:absolute after:bg-[#1d1d1d] after:rounded-full after:top-[4px] after:right-1 after:translate-y-full md:after:w-8 md:after:h-8 after:w-4 after:h-4 after:opacity-0 after:transition-all after:duration-700 peer-checked:after:opacity-100 peer-checked:after:rotate-180 peer-checked:after:translate-y-0"></div>
+        <div className="hidden md:block ml-4">
+      <label className="relative items-center cursor-pointer">
+        <input
+          type="checkbox"
+          name="dark-mode"
+          id="dark-toggle"
+          className="hidden"
+          checked={isChecked}
+          onChange={toggleDarkMode}
+        />
+        <div className="toggle">
+          <label htmlFor="dark-toggle" className="flex items-center cursor-pointer">
+            <div className="relative">
+              <div className="block border-[1px] border-white border-white-900 w-14 h-8 rounded-full"></div>
+              <div
+                className="dot absolute top-1 bg-black bg-white w-6 h-6 rounded-full transition"
+                style={{
+                  transform: isChecked ? 'translateX(100%)' : 'translateX(0%)',
+                  transition: 'transform 0.3s ease',
+                }}
+              ></div>
+            </div>
           </label>
         </div>
+      </label>
+    </div>
+
+
+
       </div>
     </main>
   );
