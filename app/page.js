@@ -161,7 +161,7 @@ export default function Home() {
             </div>
             {/*    ---------------------------Contact Form----------*/}
 
-            <div className={"md:flex w-[100%] h-[70vh]] mt-8 dark:text-light_txt"}>
+            <div id={"Contact"} className={"md:flex w-[100%] h-[70vh]] mt-8 dark:text-light_txt"}>
                 <div
                     className={" hidden md:block w-[30vw] h-[95dvh] bg-[url('../public/contactbg.png')] bg-cover text-white"}>
                     <div className={"ml-8 mt-10"}><p>Get in Touch</p>
