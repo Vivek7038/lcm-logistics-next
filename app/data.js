@@ -93,23 +93,19 @@ export const Profiledata = [
 
 export const TimeLineData = [
     {
-        date: "2021",
-        Delivery: "1,45,666",
-        revenue: "1,45,666"
+        date: "FY 20-21",
+        Delivery: "1,12,331",
+        revenue: "4,60,358"
     },
     {
-        date: "2021",
-        Delivery: "1,45,666",
-        revenue: "1,45,666"
+        date: "FY 21-22",
+        Delivery: "1,23,443",
+        revenue: "7,98,917"
     },
     {
-        date: "2021",
+        date: "FY 22-23",
         Delivery: "1,45,666",
-        revenue: "1,45,666"
+        revenue: "10,07,950"
     },
-    {
-        date: "2021",
-        Delivery: "1,45,666",
-        revenue: "1,45,666"
-    },
+   
 ]

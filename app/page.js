@@ -9,7 +9,6 @@ export default function Home() {
     // -----------------Constants
     const chooseus = [{
         title: `Strong Client Relationship`,
-
         desc: `Longstanding Relationship with-a-Marqüee Customer Base`,
         svg: <svg width="41" height="35" viewBox="0 0 41 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path className={"fill-black dark:fill-white"}
@@ -19,7 +18,6 @@ export default function Home() {
     },
         {
             title: `Strong Client Relationship`,
-
             desc: `Longstanding Relationship
 with-a-Marqüee Customer
 Base`,
