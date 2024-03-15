@@ -21,7 +21,7 @@ const data = [
   },
   {
     label: "Contact",
-    link: "#Contact",
+    link: "/#Contact",
   },
 ];
 const Navbar = () => {
