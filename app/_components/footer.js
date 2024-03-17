@@ -38,10 +38,10 @@ export default function Footer() {
 
                 <div className={"hidden md:block"}>
                     <ul className={"list-none text-gray-500 flex flex-col gap-6"}>
-                        <li><Link href={""}>Home</Link></li>
-                        <li><Link href={""}>About</Link></li>
-                        <li><Link href={""}>Contact</Link></li>
-                        <li><Link href={""}>Office</Link></li>
+                        <li><Link href={"/"}>Home</Link></li>
+                        <li><Link href={"/about-us"}>About</Link></li>
+                        <li><Link href={"#Contact"}>Contact</Link></li>
+                        <li><Link href={"/services"}>Services</Link></li>
                     </ul>
 
                 </div>
@@ -108,7 +108,7 @@ export default function Footer() {
 
             </div>
             <div className={"flex w-[100%] py-4 text-white justify-center py-8s bg-stone-950 text-sm"}>
-                Copyright@2024 Draft LLC.All right reserved
+                Copyright@2024 Draft LCM.All right reserved
             </div>
         </div>
     )

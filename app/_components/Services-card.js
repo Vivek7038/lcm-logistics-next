@@ -27,8 +27,9 @@ export default function Card({ item, index = 1 }) {
                 <p>
                     {item.desc.slice(0, 100)}{"..."}
                 </p>
-                <a className={"absolute font-medium right-4 bottom-4 cursor-pointer"} onClick={() => handleClick(item)}>
+                <a className={"absolute font-medium right-4 bottom-4 cursor-pointer text-sm md:text-md lg:text-md xl:text-lg group"} onClick={() => handleClick(item)}>
                     READ MORE
+                     <div class="bg-black h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
                 </a>
             </div>
 

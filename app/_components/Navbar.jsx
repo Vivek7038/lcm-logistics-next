@@ -67,7 +67,7 @@ const Navbar = () => {
         color ? "bg-black" : ""
       }`}
     >
-      <div className="flex flex-row  items-center  justify-between py-7 px-4">
+      <div className="flex flex-row  items-center  justify-between py-7 px-4  lg:px-7">
         <div className="font-bold text-[18px] flex items-center justify-between">
           <img src={"./logo.png"} alt={"logo"} className={"h-8 w-8 pr-2"}></img>
           <div className={`text-2xl text-black ${color ? "text-white" : ""}`}>
@@ -131,7 +131,7 @@ const Navbar = () => {
             </h1>
           ))}
         </div>
-        <div className="hidden md:block ml-4">
+        <div className="hidden md:block ml-4 pl-12">
       <label className="flex  items-center cursor-pointer">
         <input
           type="checkbox"
@@ -146,9 +146,9 @@ const Navbar = () => {
             <div className="relative">
               <div className="block border-[1px] border-white border-white-900 w-14 h-8 rounded-full"></div>
               <div
-                className="dot absolute top-1  bg-white w-6 h-6 rounded-full transition"
+                className="dot absolute top-1   bg-white w-6 h-6 rounded-full transition"
                 style={{
-                  transform: isChecked ? 'translateX(100%)' : 'translateX(0%)',
+                  transform: isChecked ? 'translateX(100%)' : ' translateX(0%)',
                   transition: 'transform 0.3s ease',
                 }}
               ></div>
