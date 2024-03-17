@@ -10,21 +10,21 @@ const AboutUs = () => {
   return (
     <>
       <div className={"xl:w-[89%]"}>
-        <div className={"md:hidden xl:block"}>
+        <div className={"md:hidden xl:block "}>
           Established in 2015, LCM is one of the leading midsize delivery &
           logistics company based in{" "}
           <a className={"font-bold italic"}>BANGALORE</a>
         </div>
 
-        <div>
-          <p className={"xl:my-12 md:mb-8 md:mt-0"}>
+        <div className="text-justify">
+          <p className={"xl:my-12 md:mb-8 md:mt-0 text-justify"}>
             Has maintained exclusive long term contracts with businesses like
             Ajio, Jio Mart, Reliance Digital, Indian Posts etc., enjoying
             stupendous growth on a yearly basis. The foundation for the company
             has been laid by strong supply chain professionals with over 15
             years of entrepreneurial stints.
           </p>
-          <p>
+          <p className="text-justify">
             Professionally managed by 60 full time employees with all businesses
             contracted with total of 140+ owned vehicles and approximation of
             500+ on-call based vehicles.Having its strong regional hold in South

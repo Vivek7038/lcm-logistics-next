@@ -108,11 +108,12 @@ const Navbar = () => {
           )}
         </div>
         <ul
-          className={`ml-auto text-center font-bold  md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in md:hidden ${
+          className={`ml-auto text-center font-bold  md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 smooth md:hidden ${
             open ? "top-20 " : "top-[-490px] "
           }`}
         >
-          {data.map((link) => (
+         <div className="flex flex-col items-center justify-center">
+         {data.map((link) => (
             <li key={link.label} className="md:ml-8 text-xl md:my-0 my-7">
               <a
                 href={link.link}
@@ -123,6 +124,7 @@ const Navbar = () => {
               </a>
             </li>
           ))}
+         </div>
         </ul>
         <div className="ml-auto hidden md:flex flex-row  gap-x-12 cursor-pointer ">
           {data.map((item) => (
