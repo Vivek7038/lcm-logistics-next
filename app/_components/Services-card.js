@@ -16,12 +16,12 @@ export default function Card({ item, index = 1 }) {
     }
     return (
         <div
-            className={"w-[355px] h-[410px]  relative shadow-lg bg-white dark:bg-dark_cards dark:text-white  rounded-md"}>
+            className={"w-[355px] h-[410px]  relative shadow-lg bg-white dark:bg-dark_cards dark:text-white  rounded-md  mb-10"}>
             <div className="">
                 <img src={"services.png"} alt={"img"} className={"h-[203px] w-[100%]  rounded-md "} />
             </div>
             <div className={"p-4"}>
-                <p className={"text-xl font-medium my-2"}>
+                <p className={"text-xl  my-2 font-bold capitalize"}>
                     {item.name}
                 </p>
                 <p>
@@ -29,7 +29,7 @@ export default function Card({ item, index = 1 }) {
                 </p>
                 <a className={"absolute font-medium right-4 bottom-4 cursor-pointer text-sm md:text-md lg:text-md xl:text-lg group"} onClick={() => handleClick(item)}>
                     READ MORE
-                     <div class="bg-black h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+                    <div class="bg-black h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
                 </a>
             </div>
 

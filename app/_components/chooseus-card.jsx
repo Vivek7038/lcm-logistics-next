@@ -14,7 +14,7 @@ export default function Choosecard(props) {
         {/*</svg>*/}
         <div className="dark:text-white">{props.svg}</div>
       </div>
-      <div className={"mt-4 xl:w-[50%] md:w-[80%]"}>{props.desc}</div>
+      <div className={"mt-4 xl:w-[50%] md:w-[80%] lg:w-full  text-justify  whitespace-normal"}>{props.desc}</div>
     </div>
   );
 }
