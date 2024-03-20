@@ -2,7 +2,7 @@ export default function Choosecard(props) {
   return (
     <div
       className={
-        "xl:p-6 min-h-[350px] md:min-h-[200px] md:p-4 border-black border-solid border-2 dark:border-[#444444] rounded-lg border-l-8 xl:w-[500px] xl:h-[200px] md:w-[350px] md:h-[190px] w-[250px] dark:text-light_txt dark:bg-dark_cards p-4"
+        "xl:p-6  min-h-[350px] md:min-h-[200px] md:p-4 border-black border-solid border-2 dark:border-[#444444] rounded-lg border-l-8 xl:w-[500px] xl:h-[200px] md:w-[350px] md:h-[190px] w-[250px] dark:text-light_txt dark:bg-dark_cards p-4"
       }
     >
       <div className={" text-xl md:text-2xl flex justify-between font-medium "}>
@@ -14,7 +14,7 @@ export default function Choosecard(props) {
         {/*</svg>*/}
         <div className="dark:text-white">{props.svg}</div>
       </div>
-      <div className={"mt-4 xl:w-[50%] md:w-[80%] lg:w-full  text-justify  whitespace-normal"}>{props.desc}</div>
+      <div className={"mt-4  xl:w-[70%] md:w-[80%] lg:w-full  text-justify  whitespace-normal"}>{props.desc}</div>
     </div>
   );
 }
