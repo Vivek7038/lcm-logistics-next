@@ -168,7 +168,7 @@ export default function Home() {
                         <p className={"mt-8 text-4xl font-bold"}>Reach Out to Us</p></div>
                 </div>
                 <div className={"text-white md:text-black flex flex-col mx-auto bg-[url('/contactbg.png')]  md:bg-none bg-cover backdrop-blur-3xl backdrop-opacity-90 bg-white/30  md:dark:text-light_txt "}>
-                    <div className={"bg-white/30"}>
+                    <div className={"bg-white/30 md:bg-white/0 dark:md:bg-dark_bg md:bg-none"}>
                     <div className={"font-medium text-3xl flex justify-center mb-8  "}>
                         Contact Form
                     </div>

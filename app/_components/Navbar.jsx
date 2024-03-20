@@ -150,9 +150,9 @@ const Navbar = () => {
             <div className="relative">
               <div className="block border-[1px] border-white border-white-900 w-14 h-8 rounded-full"></div>
               <div
-                className="dot absolute top-1   bg-white w-6 h-6 rounded-full transition"
+                className={`dot absolute top-1   bg-white w-6 h-6 rounded-full transition ${isChecked?'before:content-["🌛"]':'before:content-["☀️"]'} `}
                 style={{
-                  transform: isChecked ? 'translateX(100%)' : ' translateX(0%)',
+                  transform: isChecked ? 'translateX(100%) ' : ' translateX(0%)',
                   transition: 'transform 0.3s ease',
                 }}
               ></div>
