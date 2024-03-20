@@ -143,11 +143,11 @@ export default function Home() {
             <div className={"flex justify-center w-[100%] px-4 md:px-0 dark:text-light_txt"}>
                 <div className={"xl:w-[70%] md:w-[95%] relative w-[98%]"}>
                     <img src={"bubblebg.png"} alt={""}
-                        className={"absolute h-40 w-40 -z-10 xl:top-20 xl:-left-20 md:top-32 md:-left-2 hidden md:block"} />
+                        className={"absolute h-40 w-40 z-0 xl:top-20 xl:-left-20 md:top-32 md:-left-2 hidden md:block"} />
 
                     <div className={"line w-[100%] h-0 border-[1px] border-solid border-gray-500 mt-4 mb-20"}></div>
                     <div
-                        className={"font-bold xl:text-6xl md:text-5xl text-3xl md:flex md:flex-col md:items-center xl:block flex flex-col items-center flex-wrap"}>
+                        className={"font-bold xl:text-6xl md:text-5xl text-3xl md:flex md:flex-col md:items-center xl:block flex flex-col items-center flex-wrap z-20 relative"}>
                         ABOUT US
                         <div className={"xl:hidden mt-2 text-sm font-normal"}>We are logistics company based in <a
                             className={"font-bold italic"}>BANGALORE</a></div>

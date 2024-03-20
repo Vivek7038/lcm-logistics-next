@@ -9,8 +9,8 @@ const AboutUs = () => {
   };
   return (
     <>
-      <div className={"xl:w-[89%]"}>
-        <div className={"md:hidden xl:block "}>
+      <div className={"xl:w-[89%] z-20"}>
+        <div className={"md:hidden xl:block z-20 "}>
           Established in 2015, LCM is one of the leading midsize delivery &
           logistics company based in{" "}
           <a className={"font-bold italic"}>BANGALORE</a>
@@ -60,10 +60,10 @@ const AboutUs = () => {
           src={"bubblebg.png"}
           alt={""}
           className={
-            "absolute h-40 w-40 -z-10 2xl:bottom-28 md:bottom-12 xl:-right-20 md:right-2 hidden md:block"
+            "absolute h-40 w-40 z-10 2xl:bottom-32 md:bottom-12 xl:-right-20 md:right-2 hidden md:block"
           }
         />
-        <img src={"./Aboutus_vdo.png"} alt={"img"} />
+        <img src={"./Aboutus_vdo.png "} className={"relative z-20"} alt={"img"} />
       </div>
     </>
   );
