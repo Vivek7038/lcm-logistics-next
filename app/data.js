@@ -23,16 +23,21 @@ export const data = [
         name: "Road freight",
         desc: `At our company, we prioritize timely delivery, cost-effectiveness, and reliability. With a flexible fleet and experienced drivers, we ensure your cargo reaches its destination promptly. Our commitment to customer satisfaction includes clear communication, transparency, and personalized support. We're also dedicated to sustainability, minimizing our environmental footprint. Trust us for safe and secure transportation, backed by comprehensive insurance coverage and strict safety protocols. Choose us for unmatched reliability and efficiency in road freight services. `,
         short:`Elevate your logistics with our efficient road freight solutions. Swift, secure, and seamless deliveries for your success.`,
+        img:"/service-1.jpg"
     },
     {
         name: "Rail freight ",
         desc: `Rail freight offers numerous advantages, including cost-effectiveness, reliability, and eco-friendliness. At our company, we leverage the extensive rail network to provide efficient transportation solutions for your cargo. With our strategic partnerships and state-of-the-art facilities, we ensure seamless rail transportation from origin to destination. Our dedicated team of professionals oversees every aspect of your shipment, ensuring timely delivery and unparalleled customer satisfaction. By choosing our rail freight services, you're not only optimizing your logistics operations but also contributing to a greener, more sustainable future. Partner with us today and experience the efficiency and reliability of our rail freight services firsthand.`,
         short:`Swift, sustainable, reliable: Power your logistics with rail freight for seamless cargo transport.`,
+        img:"/service-2.jpg"
+
     },
     {
         name: "Coastal Freight ",
         desc: `Coastal freight provides a cost-effective and environmentally friendly alternative for shipments traveling by sea. With our extensive network of vessels and strategic ports of call, we ensure seamless transportation along coastal routes. Our experienced team manages every aspect of your shipment, from loading to delivery, ensuring timely and secure transit. By harnessing the power of coastal freight, we help streamline your supply chain while minimizing carbon emissions. Trust us to deliver your cargo safely and efficiently, leveraging the vast potential of coastal shipping. Partner with us today and unlock the benefits of coastal freight for your business.`,
         short:`Sail into success with our coastal freight expertise—swift, reliable, and seamless maritime transport for your cargo needs.`,
+        img:"/service-3.jpg"
+
     },
     {
         name: "Cold chain warehouse ",
@@ -42,6 +47,7 @@ export const data = [
         By choosing our cold chain warehouse services, you gain a strategic partner dedicated to the safe and efficient handling of your temperature-sensitive goods. Experience the reliability and professionalism of our cold chain solutions, and elevate your logistics operations to new heights. Partner with us today and unlock the full potential of your perishable cargo.
         `,
         short:`Chill with confidence: Our cold chain warehouse ensures perfect preservation for your perishables, from storage to delivery.`,
+        img:"/service-4.jpg"
     },
     {
         name: "Traditional warehouse ",
@@ -51,6 +57,8 @@ export const data = [
         Experience the reliability and professionalism of our traditional warehouse services and elevate your logistics operations to new heights. Partner with us today and unlock the full potential of your warehousing needs.
         `,
         short:`Experience reliability at its core with our traditional warehouse. Secure, organized, and ready to optimize storage for your goods.`,
+        img:"/warehouse.png"
+
     },
     {
         name: "CFS/ICDs ",
@@ -60,6 +68,8 @@ export const data = [
         Additionally, our CFS/ICD services offer value-added solutions such as container stuffing and de-stuffing, cargo consolidation, and warehousing. Whether you require short-term storage or long-term distribution solutions, we have the capabilities to meet your needs.
         Partner with us for reliable and efficient CFS/ICD services that streamline your logistics operations and drive business growth. Experience the difference of working with a trusted partner committed to excellence and customer satisfaction. Let us optimize your cargo handling needs and propel your business forward.`,
         short:`Efficient CFS/ICDs: Streamlining container handling and storage, optimizing logistics for smooth import and export operations.`,
+        img:"/service-6.jpg"
+
     },
 ];
 

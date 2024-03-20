@@ -18,7 +18,7 @@ export default function Card({ item, index = 1 }) {
         <div
             className={"w-[355px] h-[410px]  relative shadow-lg bg-white dark:bg-dark_cards dark:text-white  rounded-md  mb-10"}>
             <div className="">
-                <img src={"services.png"} alt={"img"} className={"h-[203px] w-[100%]  rounded-md "} />
+                <img src={item.img} alt={"img"} className={"h-[203px] w-[100%]  rounded-md "} />
             </div>
             <div className={"p-4"}>
                 <p className={"text-xl  my-2 font-bold capitalize"}>

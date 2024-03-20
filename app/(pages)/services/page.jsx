@@ -41,10 +41,9 @@ const Page = () => {
         <div className="flex flex-col md:flex-row gap-y-8 gap-x-5 items-start pt-[10dvh]">
           <div className="w-full h-100 md:w-[70%] ">
             <img
-              src="/warehouse.png"
+              src={selectedService.img}
               alt="banner"
               width={300}
-              height={15}
               layout="responsive"
               className="object-contain w-full h-full min-h-full"
             />
