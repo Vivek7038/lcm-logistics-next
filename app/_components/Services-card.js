@@ -25,7 +25,8 @@ export default function Card({ item, index = 1 }) {
                     {item.name}
                 </p>
                 <p>
-                    {item.desc.slice(0, 100)}{"..."}
+           
+                    {item.short}
                 </p>
                 <a className={"absolute pt-4  font-medium md:right-4 md:bottom-4 cursor-pointer text-sm md:text-md lg:text-md xl:text-lg group md:mt-16"} onClick={() => handleClick(item)}>
                     READ MORE

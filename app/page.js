@@ -69,8 +69,8 @@ export default function Home() {
                     <div className={"2xl:text-9xl xl:text-8xl md:text-6xl font-bold text-3xl   "}>LCM LOGISTICS</div>
                     <div className={"flex flex-col items-center mt-8 "}>
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,</p>
-                        <p>quaerat quisquam cum ratione ea aliquid qui hic recusandae atque corporis.</p>
+                        <p>Streamline Your Supply Chain with Our Comprehensive Logistics Solutions</p>
+                       
                     </div>
                     <div className={"flex mt-8 items-center"}>
                         <svg width="30" height="32" viewBox="0 0 35 37" fill="none" xmlns="http://www.w3.org/2000/svg">
