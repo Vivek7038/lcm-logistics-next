@@ -58,7 +58,7 @@ export default function Home() {
     },
     ]
 
-    const trustedby = ["./trustedby/1.png", "./trustedby/2.png", "./trustedby/3.png", "./trustedby/4.png", "./trustedby/5.png"]
+    const trustedby = ["./trustedby/1.jpg", "./trustedby/2.png", "./trustedby/3.jpg", "./trustedby/4.png", "./trustedby/5.png", "./trustedby/6.jpg"]
 
     // -------------------------------------------
     return (
@@ -134,7 +134,7 @@ export default function Home() {
                 <div
                     className={"md:flex xl:justify-between md:justify-around xl:w-[80%]  md:w-[50%] md:flex-wrap hidden "}>
                     {trustedby.map((e, index) => {
-                        return <div key={index}><img className={"xl:h-8 md:h-6 w-auto my-4"} src={e} alt={"img"} /></div>
+                        return <div key={index}><img className={"xl:h-24 md:h-8 w-auto my-4"} src={e} alt={"img"} /></div>
                     })}
                 </div>
             </div>
