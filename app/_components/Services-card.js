@@ -30,7 +30,7 @@ export default function Card({ item, index = 1 }) {
                 </p>
                 <a className={"absolute pt-4  font-medium md:right-4 md:bottom-4 cursor-pointer text-sm md:text-md lg:text-md xl:text-lg group md:mt-16"} onClick={() => handleClick(item)}>
                     READ MORE
-                    <div class="bg-black h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+                    <div className="bg-black h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
                 </a>
             </div>
 
