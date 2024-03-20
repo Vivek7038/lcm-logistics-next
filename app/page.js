@@ -161,13 +161,13 @@ export default function Home() {
             </div>
             {/*    ---------------------------Contact Form----------*/}
 
-            <div id={"Contact"} className={"md:flex w-[100%] h-[70vh]] mt-8 dark:text-light_txt"}>
+            <div id={"Contact"} className={"md:flex w-[100%] h-[70vh]]  mt-8 dark:text-light_txt"}>
                 <div
-                    className={" hidden md:block w-[30vw] h-[95dvh] bg-[url('../public/contactbg.png')] bg-cover text-white  "}>
+                    className={" hidden md:block w-[30vw] h-[95dvh] xl:[90dvh] bg-[url('../public/contactbg.png')] bg-cover text-white  "}>
                     <div className={"ml-8 mt-10"}><p>Get in Touch</p>
                         <p className={"mt-8 text-4xl font-bold"}>Reach Out to Us</p></div>
                 </div>
-                <div className={"text-white md:text-black flex flex-col mx-auto bg-[url('/contactbg.png')] md:bg-none bg-cover  md:dark:text-light_txt"}>
+                <div className={"text-white md:text-black flex flex-col mx-auto bg-[url('/contactbg.png')] md:bg-none bg-cover  md:dark:text-light_txt "}>
 
                     <div className={"font-medium text-3xl flex justify-center mb-8 "}>
                         Contact Form
