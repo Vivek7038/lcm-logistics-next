@@ -167,9 +167,9 @@ export default function Home() {
                     <div className={"ml-8 mt-10"}><p>Get in Touch</p>
                         <p className={"mt-8 text-4xl font-bold"}>Reach Out to Us</p></div>
                 </div>
-                <div className={"text-white md:text-black flex flex-col mx-auto bg-[url('/contactbg.png')] md:bg-none bg-cover  md:dark:text-light_txt "}>
-
-                    <div className={"font-medium text-3xl flex justify-center mb-8 "}>
+                <div className={"text-white md:text-black flex flex-col mx-auto bg-[url('/contactbg.png')]  md:bg-none bg-cover backdrop-blur-3xl backdrop-opacity-90 bg-white/30  md:dark:text-light_txt "}>
+                    <div className={"bg-white/30"}>
+                    <div className={"font-medium text-3xl flex justify-center mb-8  "}>
                         Contact Form
                     </div>
                     <div className={"xl:ml-0 p-4 md:p-0 md:ml-6 xl:w-[100%] md:w-[80%]"}>
@@ -213,6 +213,7 @@ export default function Home() {
                             </button>
                         </form>
                     </div>
+                        </div>
                 </div>
 
 
