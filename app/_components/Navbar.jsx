@@ -113,8 +113,8 @@ const Navbar = () => {
           }`}
         >
          <div className="flex flex-col items-center justify-center">
-         {data.map((link) => (
-          <div className="w-full shadow-md">
+         {data.map((link,index) => (
+          <div className="w-full shadow-md " key={index}>
               <li key={link.label} className="md:ml-8 text-xl md:my-0 my-7 ">
               <a
                 href={link.link}
@@ -129,8 +129,8 @@ const Navbar = () => {
          </div>
         </ul>
         <div className="ml-auto hidden md:flex flex-row  gap-x-12 cursor-pointer ">
-          {data.map((item) => (
-            <h1 key={item.name}>
+          {data.map((item,index) => (
+            <h1 key={index}>
               <Link href={item.link}>{item.label}</Link>
             </h1>
           ))}
