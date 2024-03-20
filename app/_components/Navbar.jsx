@@ -67,7 +67,7 @@ const Navbar = () => {
         color ? "bg-black" : ""
       }`}
     >
-      <div className="flex flex-row  items-center  justify-between py-7 px-4  lg:px-7">
+      <div className="flex flex-row  items-center  justify-between py-7 px-4  lg:px-20">
         <div className="font-bold text-[18px] flex items-center justify-between">
           <img src={"./logo.png"} alt={"logo"} className={"h-8 w-8 pr-2"}></img>
           <div className={`text-2xl text-black ${color ? "text-white" : ""}`}>
@@ -108,21 +108,23 @@ const Navbar = () => {
           )}
         </div>
         <ul
-          className={`ml-auto text-center font-bold  md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all shadow-xl duration-500 smooth md:hidden ${
-            open ? "top-20 " : "top-[-490px] "
+          className={`ml-auto text-center font-bold  md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 transition-all shadow-xl duration-500 smooth md:hidden ${
+            open ? "top-20 " : "top-[-490px] ml-0 pl-0"
           }`}
         >
          <div className="flex flex-col items-center justify-center">
          {data.map((link) => (
-            <li key={link.label} className="md:ml-8 text-xl md:my-0 my-7">
+          <div className="w-full shadow-md">
+              <li key={link.label} className="md:ml-8 text-xl md:my-0 my-7 ">
               <a
                 href={link.link}
-                className="text-gray-800 hover:text-gray-400 duration-500"
+                className="text-gray-800 hover:text-gray-400 duration-500 "
                 onClick={() => handleClick(link.link)}
               >
                 {link.label}
               </a>
             </li>
+          </div>
           ))}
          </div>
         </ul>
