@@ -16,7 +16,7 @@ export default function Choosecard(props) {
       </div>
       <div
         className={
-          "mt-4  xl:w-[70%] md:w-[80%] lg:w-full  text-justify  whitespace-normal"
+          "mt-4  xl:w-[70%] md:w-[80%] lg:w-full  text-justify  whitespace-normal md:text-left mb-2"
         }
       >
         {props.desc}

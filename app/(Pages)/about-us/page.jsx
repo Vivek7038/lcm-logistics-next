@@ -29,7 +29,8 @@ const Page = () => {
                         <div>
               <span className="-top-13 -left-14 md:hidden lg:inline-block absolute lg:top-12 lg:-left-14 z-1 p-0">
                 <ImQuotesLeft
-                    color="#83838380"
+                    // color="#83838380"
+                    className="text-[#83838380] dark:text-white"
                     style={{width: "60px", height: "70px"}}
                 />
               </span>
@@ -43,9 +44,10 @@ const Page = () => {
                             <span
                                 className="-bottom-2 -right-8 md:hidden lg:inline-block  absolute lg:-bottom-2 lg:-right-11 z-1 p-0">
                 <ImQuotesRight
-                    color="#05040480"
+                    // color="#05040480"
+                    className="text-[#83838380] dark:text-white"
                     style={{width: "60px", height: "70px"}}
-                    className=""
+                   
                 />
               </span>
                         </div>
@@ -61,7 +63,7 @@ const Page = () => {
                         {/* <TimelineCard /> */}
                     </div>
                 </div>
-                <div className="w-full max-w-[100dvw]">
+                <div className="w-full   max-w-[100dvw]">
                     {/* <Timeline /> */}
                     <TimeLineParent/>
                 </div>
