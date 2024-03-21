@@ -32,7 +32,7 @@ const Navbar = () => {
   const router = useRouter();
 
   function toggleDarkMode() {
-    setIsChecked((prev) => !prev); 
+    setIsChecked((prev) => !prev);
     var body = document.body;
 
     if (body.classList.contains("dark")) {
@@ -74,37 +74,46 @@ const Navbar = () => {
             LCM.PVT.LTD
           </div>
         </div>
-        <div className={"inline-block md:hidden ml-auto"}>
-        <label className="relative items-center cursor-pointer">
-        <input
-          type="checkbox"
-          name="dark-mode"
-          id="dark-toggle"
-          className="hidden"
-          checked={isChecked}
-          onChange={toggleDarkMode}
-        />
-        <div className="toggle">
-          <label htmlFor="dark-toggle" className="flex items-center cursor-pointer">
-            <div className="relative">
-              <div className="block border-[1px] border-white border-white-900 w-14 h-8 rounded-full"></div>
-              <div
-                className="dot absolute top-1  bg-white w-6 h-6 rounded-full transition"
-                style={{
-                  transform: isChecked ? 'translateX(100%)' : 'translateX(0%)',
-                  transition: 'transform 0.3s ease',
-                }}
-              ></div>
+        <div className="block md:hidden pl-4 ml-auto">
+          <label className="flex  items-center cursor-pointer">
+            <input
+              type="checkbox"
+              name="dark-mode"
+              id="dark-toggle"
+              className="hidden"
+              checked={isChecked}
+              onChange={toggleDarkMode}
+            />
+            <div className="toggle">
+              <label
+                htmlFor="dark-toggle"
+                className="flex items-center cursor-pointer"
+              >
+                <div className="relative">
+                  <div className="block border-[1px] border-white border-white-900 w-14 h-7 rounded-full"></div>
+                  <div
+                    className={`dot absolute top-1   bg-white w-6 h-6 rounded-full transition ${
+                      isChecked
+                        ? 'before:content-["🌛"]'
+                        : 'before:content-["☀️"]'
+                    } `}
+                    style={{
+                      transform: isChecked
+                        ? "translateX(100%) "
+                        : " translateX(0%)",
+                      transition: "transform 0.3s ease",
+                    }}
+                  ></div>
+                </div>
+              </label>
             </div>
           </label>
         </div>
-      </label>
-        </div>
-        <div className=" z-[999] md:hidden w-12 h-10 text-center ">
+        <div className=" z-[999] md:hidden w-12 h-10 flex items-center">
           {open ? (
-            <CloseIcon onClick={() => setOpen(!open)} className=" w-20 h-15" />
+            <CloseIcon onClick={() => setOpen(!open)} className=" w-20 h-17" />
           ) : (
-            <MenuIcon onClick={() => setOpen(!open)} className=" w-20 h-15" />
+            <MenuIcon onClick={() => setOpen(!open)} className=" w-20 h-17" />
           )}
         </div>
         <ul
@@ -112,58 +121,64 @@ const Navbar = () => {
             open ? "top-20 " : "top-[-490px] ml-0 pl-0"
           }`}
         >
-         <div className="flex flex-col items-center justify-center">
-         {data.map((link,index) => (
-          <div className="w-full shadow-md " key={index}>
-              <li key={link.label} className="md:ml-8 text-xl md:my-0 my-7 ">
-              <a
-                href={link.link}
-                className="text-gray-800 hover:text-gray-400 duration-500 "
-                onClick={() => handleClick(link.link)}
-              >
-                {link.label}
-              </a>
-            </li>
+          <div className="flex flex-col items-center justify-center">
+            {data.map((link, index) => (
+              <div className="w-full shadow-md " key={index}>
+                <li key={link.label} className="md:ml-8 text-xl md:my-0 my-7 ">
+                  <a
+                    href={link.link}
+                    className="text-gray-800 hover:text-gray-400 duration-500 "
+                    onClick={() => handleClick(link.link)}
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              </div>
+            ))}
           </div>
-          ))}
-         </div>
         </ul>
         <div className="ml-auto hidden md:flex flex-row  gap-x-12 cursor-pointer ">
-          {data.map((item,index) => (
+          {data.map((item, index) => (
             <h1 key={index}>
               <Link href={item.link}>{item.label}</Link>
             </h1>
           ))}
         </div>
         <div className="hidden md:block ml-4 pl-12">
-      <label className="flex  items-center cursor-pointer">
-        <input
-          type="checkbox"
-          name="dark-mode"
-          id="dark-toggle"
-          className="hidden"
-          checked={isChecked}
-          onChange={toggleDarkMode}
-        />
-        <div className="toggle">
-          <label htmlFor="dark-toggle" className="flex items-center cursor-pointer">
-            <div className="relative">
-              <div className="block border-[1px] border-white border-white-900 w-14 h-8 rounded-full"></div>
-              <div
-                className={`dot absolute top-1   bg-white w-6 h-6 rounded-full transition ${isChecked?'before:content-["🌛"]':'before:content-["☀️"]'} `}
-                style={{
-                  transform: isChecked ? 'translateX(100%) ' : ' translateX(0%)',
-                  transition: 'transform 0.3s ease',
-                }}
-              ></div>
+          <label className="flex  items-center cursor-pointer">
+            <input
+              type="checkbox"
+              name="dark-mode"
+              id="dark-toggle"
+              className="hidden"
+              checked={isChecked}
+              onChange={toggleDarkMode}
+            />
+            <div className="toggle">
+              <label
+                htmlFor="dark-toggle"
+                className="flex items-center cursor-pointer"
+              >
+                <div className="relative">
+                  <div className="block border-[1px] border-white border-white-900 w-14 h-8 rounded-full"></div>
+                  <div
+                    className={`dot absolute top-1   bg-white w-6 h-6 rounded-full transition ${
+                      isChecked
+                        ? 'before:content-["🌛"]'
+                        : 'before:content-["☀️"]'
+                    } `}
+                    style={{
+                      transform: isChecked
+                        ? "translateX(100%) "
+                        : " translateX(0%)",
+                      transition: "transform 0.3s ease",
+                    }}
+                  ></div>
+                </div>
+              </label>
             </div>
           </label>
         </div>
-      </label>
-    </div>
-
-
-
       </div>
     </main>
   );
