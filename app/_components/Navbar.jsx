@@ -70,7 +70,9 @@ const Navbar = () => {
       <div className="flex flex-row  items-center  justify-between py-7 px-4  lg:px-20">
         <div className="font-bold text-[18px] flex items-center justify-between">
           <img src={"./logo.png"} alt={"logo"} className={"h-8 w-8 pr-2"}></img>
-          <div className={`text-2xl text-black ${color ? "text-white" : ""}`}>
+          <div
+            className={`text-2xl text-black ${color ? "text-white" : ""} pl-2`}
+          >
             LCM.PVT.LTD
           </div>
         </div>
@@ -99,7 +101,7 @@ const Navbar = () => {
                     } `}
                     style={{
                       transform: isChecked
-                        ? "translateX(100%) "
+                        ? "translateX(140%) "
                         : " translateX(0%)",
                       transition: "transform 0.3s ease",
                     }}
