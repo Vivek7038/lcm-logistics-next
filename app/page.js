@@ -143,7 +143,7 @@ export default function Home() {
             <div className={"flex justify-center w-[100%] px-4 md:px-0 dark:text-light_txt"}>
                 <div className={"xl:w-[70%] md:w-[95%] relative w-[98%]"}>
                     <img src={"bubblebg.png"} alt={""}
-                        className={"absolute h-40 w-40 z-0 xl:top-20 xl:-left-20 md:top-32 md:-left-2 hidden md:block"} />
+                        className={"absolute h-40 w-40 z-0 xl:top-20 xl:-left-20 md:top-32 md:-left-2 hidden md:block md:dark:hidden"} />
 
                     <div className={"line w-[100%] h-0 border-[1px] border-solid border-gray-500 mt-4 mb-20"}></div>
                     <div
