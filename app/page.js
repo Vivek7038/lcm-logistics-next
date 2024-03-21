@@ -43,7 +43,7 @@ export default function Home() {
         </svg>
     },
     {
-        title: `Strong Order Book value -
+        title: `Strong Order Book value 
         `,
 
         desc: `Adding Blue chip clients with expected incremental revenue of INR 140 Mn
