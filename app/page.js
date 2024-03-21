@@ -153,7 +153,7 @@ export default function Home() {
                             className={"font-bold italic"}>BANGALORE</a></div>
                     </div>
 
-                    <div className={"md:grid md:grid-cols-2 my-12 font-medium"}>
+                    <div className={"md:grid md:grid-cols-2 gap-x-2 my-12 font-medium"}>
                         <AboutUs />
                     </div>
                     <div className={"line w-[100%] h-0 border-[1px] border-solid border-gray-500 my-4"}></div>
@@ -161,9 +161,9 @@ export default function Home() {
             </div>
             {/*    ---------------------------Contact Form----------*/}
 
-            <div id={"Contact"} className={"md:flex w-[100%] h-[70vh]]  mt-8 dark:text-light_txt"}>
+            <div id={"Contact"} className={"md:flex w-[100%] h-[70vh]]  mt-8 dark:text-light_txt "}>
                 <div
-                    className={" hidden md:block w-[30vw] h-[95dvh] xl:[90dvh] bg-[url('../public/contactbg.png')] bg-cover text-white  "}>
+                    className={" hidden md:block w-[30vw] h-auto xl:h-auto  bg-[url('../public/contactbg.png')] bg-cover text-white "}>
                     <div className={"ml-8 mt-10"}><p>Get in Touch</p>
                         <p className={"mt-8 text-4xl font-bold"}>Reach Out to Us</p></div>
                 </div>
@@ -209,7 +209,7 @@ export default function Home() {
                                 </label>
                             </div>
                             <button
-                                className={" mt-4 md:mt-0 outline-0 border-2 h-12 md:border-black  border-b-white border-solid rounded-xl"}>Send
+                                className={" mt-4 md:mt-0 outline-0 border-2 h-12 md:border-black  border-b-white border-solid rounded-xl mb-8"}>Send
                             </button>
                         </form>
                     </div>
