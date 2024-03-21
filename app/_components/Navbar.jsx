@@ -171,7 +171,7 @@ const Navbar = () => {
                     } `}
                     style={{
                       transform: isChecked
-                        ? "translateX(100%) "
+                        ? "translateX(135%) "
                         : " translateX(0%)",
                       transition: "transform 0.3s ease",
                     }}
