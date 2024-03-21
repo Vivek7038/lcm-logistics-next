@@ -183,20 +183,20 @@ export default function Home() {
                             <div className={"grid grid-cols-2 gap-4"}>
                                 <label>
                                     First name
-                                    <input className={" pl-4 border-0 outline-0 h-12 rounded-xl bg-gray-200 w-[100%]"}
+                                    <input className={" pl-4 border-0 outline-0 h-12 rounded-xl bg-gray-200 w-[100%] text-black"}
                                         placeholder={"first name"} />
                                 </label>
                                 <label>
                                     Last name
                                     <input placeholder={"Last name"}
-                                        className={"pl-4 border-0 outline-0 h-12 rounded-xl bg-gray-200 w-[100%]"} />
+                                        className={"pl-4 border-0 outline-0 h-12 rounded-xl bg-gray-200 w-[100%] text-black"} />
                                 </label>
                             </div>
                             <div>
                                 <label>
                                     Email Address
                                     <input type={"email"} placeholder={"email address"}
-                                        className={"pl-4 border-0 outline-0 h-12 rounded-xl bg-gray-200 w-[100%]"} />
+                                        className={"pl-4 border-0 outline-0 h-12 rounded-xl bg-gray-200 w-[100%] text-black"} />
                                 </label>
 
                             </div>
@@ -205,7 +205,7 @@ export default function Home() {
                                 <label>
                                     Message
                                     <input placeholder={"leave a message"}
-                                        className={"pl-4 border-0 outline-0 h-28 rounded-xl bg-gray-200 w-[100%]"} />
+                                        className={"pl-4 border-0 outline-0 h-28 rounded-xl bg-gray-200 w-[100%] text-black"} />
                                 </label>
                             </div>
                             <button
