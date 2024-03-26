@@ -70,7 +70,7 @@ const Page = () => {
 
                 {/* team */}
                 <div className="flex flex-col  gap-y-8 gap-x-5 items-start pt-[10dvh] max-w-[100dvw]">
-                    <div className="w-full max-w-[70%] ">
+                    <div className="w-full max-w-[100vw] md:max-w-[70%] ">
                         <h1 className="md:text-6xl text-4xl  text-black dark:text-light_txt font-bold my-3">
                             Meet The Team
                         </h1>
