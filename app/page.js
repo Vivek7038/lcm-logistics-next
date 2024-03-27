@@ -3,6 +3,8 @@ import Card from "@/app/_components/Services-card";
 import Choosecard from "@/app/_components/chooseus-card";
 import AboutUs from "./_components/AboutUs";
 import { data } from "./data";
+import emailjs from 'emailjs-com';
+import Contact from "./_components/Contact";
 
 export default function Home() {
 
@@ -70,7 +72,7 @@ export default function Home() {
                     <div className={"flex flex-col items-center mt-8 "}>
 
                         <p className="text-center">Streamline Your Supply Chain with Our Comprehensive Logistics Solutions</p>
-                       
+
                     </div>
                     <div className={"flex mt-8 items-center text-center flex-col gap-y-2 md:flex-row"}>
                         <svg width="30" height="32" viewBox="0 0 35 37" fill="none" xmlns="http://www.w3.org/2000/svg " className="">
@@ -169,51 +171,19 @@ export default function Home() {
                 </div>
                 <div className={"text-white md:text-black flex flex-col mx-auto bg-[url('/contactbg.png')]  md:bg-none bg-cover backdrop-blur-3xl backdrop-opacity-90   md:dark:text-light_txt "}>
                     <div className={"bg-white/30 md:bg-white/0 dark:md:bg-dark_bg md:bg-none"}>
-                    <div className={"font-medium text-3xl flex justify-center mb-8  "}>
-                        Contact Form
-                    </div>
-                    <div className={"xl:ml-0 p-4 md:p-0 md:ml-6 xl:w-[100%] md:w-[80%]"}>
-                        <p>Have questions or feedback? We're here to help. Send us a
-                            message, and we'll respond within 24 hours</p>
-                    </div>
-                    <div
-                        className={"xl:w-[100%] md:w-[80%] md:ml-6 hidden md:block md:p-0 h-[0] border-[1px] border-gray-500 border-solid my-8"}></div>
-                    <div className="w-[100%] p-4 md:p-0">
-                        <form className={"xl:w-[100%] md:w-[80%] md:ml-6 flex flex-col xl:gap-10 md:gap-6"}>
-                            <div className={"grid grid-cols-2 gap-4"}>
-                                <label>
-                                    First name
-                                    <input className={" pl-4 border-0 outline-0 h-12 rounded-xl bg-gray-200 w-[100%] text-black"}
-                                        placeholder={"first name"} />
-                                </label>
-                                <label>
-                                    Last name
-                                    <input placeholder={"Last name"}
-                                        className={"pl-4 border-0 outline-0 h-12 rounded-xl bg-gray-200 w-[100%] text-black"} />
-                                </label>
-                            </div>
-                            <div>
-                                <label>
-                                    Email Address
-                                    <input type={"email"} placeholder={"email address"}
-                                        className={"pl-4 border-0 outline-0 h-12 rounded-xl bg-gray-200 w-[100%] text-black"} />
-                                </label>
-
-                            </div>
-                            <div>
-
-                                <label>
-                                    Message
-                                    <input placeholder={"leave a message"}
-                                        className={"pl-4 border-0 outline-0 h-28 rounded-xl bg-gray-200 w-[100%] text-black"} />
-                                </label>
-                            </div>
-                            <button
-                                className={" mt-4 md:mt-0 outline-0 border-2 h-12 md:border-black md:dark:border-white  border-b-white border-solid rounded-xl mb-8"}>Send
-                            </button>
-                        </form>
-                    </div>
+                        <div className={"font-medium text-3xl flex justify-center mb-8  "}>
+                            Contact Form
                         </div>
+                        <div className={"xl:ml-0 p-4 md:p-0 md:ml-6 xl:w-[100%] md:w-[80%]"}>
+                            <p>Have questions or feedback? We're here to help. Send us a
+                                message, and we'll respond within 24 hours</p>
+                        </div>
+                        <div
+                            className={"xl:w-[100%] md:w-[80%] md:ml-6 hidden md:block md:p-0 h-[0] border-[1px] border-gray-500 border-solid my-8"}></div>
+                        <div className="w-[100%] p-4 md:p-0">
+                            <Contact />
+                        </div>
+                    </div>
                 </div>
 
 
