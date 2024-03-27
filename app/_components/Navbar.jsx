@@ -119,11 +119,19 @@ const Navbar = () => {
             </div>
           </label>
         </div>
-        <div className=" z-[999] md:hidden w-12 h-10 flex items-center">
+        <div className=" px-2 z-[999] md:hidden w-18 h-19 flex items-center">
           {open ? (
-            <CloseIcon onClick={() => setOpen(!open)} className=" w-20 h-17" />
+            <CloseIcon
+              onClick={() => setOpen(!open)}
+              className=" w-23 h-19"
+              style={{ fontSize: "2rem" }}
+            />
           ) : (
-            <MenuIcon onClick={() => setOpen(!open)} className=" w-20 h-17" />
+            <MenuIcon
+              onClick={() => setOpen(!open)}
+              className=" w-23 h-19"
+              style={{ fontSize: "2rem" }}
+            />
           )}
         </div>
         <ul
