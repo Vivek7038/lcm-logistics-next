@@ -70,7 +70,7 @@ const Navbar = () => {
       <div className="flex flex-row  items-center  justify-between py-7 px-4  lg:px-20">
         <div className="font-bold text-[18px] flex items-center justify-between">
           <img
-            src={"./logo.png"}
+            src={"./logo-1.png"}
             alt={"logo"}
             className={"h-8 w-8 pr-2 cursor-pointer"}
             onClick={() => router.push("/")}

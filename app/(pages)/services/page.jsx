@@ -95,9 +95,7 @@ const Page = () => {
         <div className="flex flex-col justify-start w-full md:max-w-[60%] py-10 dark:text-white">
           <h1 className="md:text-6xl text-4xl  font-bold">FAQ</h1>
           <p className="w-full md:max-w-[90%] py-7">
-            Lorem ipsum dolor sit amet consectetur. Varius risus montes morbi
-            ultrices sed ut. Lorem.Lorem ipsum dolor sit amet consectetur.
-            Varius risus montes morbi ultrices sed ut. Lorem.
+            All commonly asked questions answered here .
           </p>
 
           <div className="flex flex-col gap-y-1">
