@@ -27,7 +27,7 @@ export const data = [
         name: "Full Truck Load",
         desc: `Our efficient and reliable Full Truck Load (FTL) services. With dedicated truck capacity, timely pickups, and deliveries, we ensure your cargo receives priority attention. Our experienced team prioritizes reliability, proactive communication, and competitive pricing, offering flexibility and scalability to meet your needs. Trust us for safe, secure, and cost-effective transportation solutions that streamline your supply chain and drive your business forward. `,
         short: `Dedicated capacity, timely pickups, and deliveries for priority cargo attention. Experienced team ensures reliability, proactive communication, and competitive pricing for streamlined supply chain solutions.`,
-        img: "/service-1.jpg"
+        img: "/full-truck.jpeg"
     },
     {
         name: "Reverse Logistics  ",
@@ -41,7 +41,7 @@ export const data = [
         name: "Over Dimensional Cargo ",
         desc: ` we specialize in handling Over Dimensional Cargo (ODC), which refers to shipments that exceed standard size and weight limits. With our expertise and specialized equipment, we ensure safe and efficient transportation of oversized and heavy cargo across various industries. Our dedicated team prioritizes customized solutions tailored to meet the unique requirements of each ODC shipment, whether it involves heavy machinery, industrial equipment, or large components. We adhere to strict safety protocols and regulatory standards to guarantee the protection of your cargo and the safety of our team members throughout the transportation process. Partner with us for reliable and efficient ODC services, delivering your oversized cargo on time and within budget.`,
         short: `Safe and efficient transportation of oversized shipments with tailored solutions and strict safety protocols. Delivering on time and within budget, ensuring protection of cargo and team members.`,
-        img: "/service-3.jpg"
+        img: "/Overweight.jpeg"
 
     },
     {
@@ -56,21 +56,21 @@ export const data = [
         desc: `At our company, we offer Value Added Services to enhance your shipping experience and streamline your operations. From packaging and labelling to order fulfilment and product assembly, we provide a range of additional services to meet your unique needs. Our experienced team goes above and beyond to add value to your logistics process, ensuring efficiency and cost-effectiveness. By outsourcing these tasks to us, you can focus on your core business activities while we handle the details. Partner with us for comprehensive Value-Added Services that elevate your supply chain and exceed your expectations.
         `,
         short: `From packaging to order fulfilment, our experienced team ensures efficiency and cost-effectiveness. Focus on your core business while we handle the details, elevating your supply chain with comprehensive solutions.`,
-        img: "/warehouse.png"
+        img: "/services.png"
 
     },
     {
         name: "3PL Warehousing ",
         desc: `At our company, we specialize in 3PL Warehousing, providing third-party logistics solutions to optimize your warehousing needs. With our state-of-the-art facilities and advanced technology, we offer secure storage, inventory management, and distribution services. Our experienced team ensures efficient handling of your goods, from receiving to shipping, with meticulous attention to detail. By outsourcing your warehousing needs to us, you can benefit from cost savings, scalability, and flexibility. Whether you require short-term storage or long-term solutions, we tailor our services to meet your specific requirements. Partner with us for reliable 3PL Warehousing solutions that streamline your supply chain and drive business growth.`,
         short: `Optimize your warehousing needs with secure storage, inventory management, and distribution services. Benefit from cost savings, scalability, and flexibility while we streamline your supply chain for business growth.`,
-        img: "/service-6.jpg"
+        img: "/warehouse.jpeg"
 
     },
     {
         name: "Last mail Delivery  ",
         desc: `At our company, we specialize in Last Mile Delivery, ensuring your packages reach their destination swiftly and securely. With our efficient network of delivery agents and advanced tracking systems, we guarantee timely and accurate deliveries. Our dedicated team goes the extra mile to accommodate specific delivery preferences and provide exceptional customer service. Whether it's residential or commercial addresses, we handle the last leg of the delivery process with precision and care. By entrusting us with your last mile deliveries, you can rest assured that your packages will arrive on time and in pristine condition. Partner with us for reliable Last Mile Delivery services that exceed your expectations and delight your customers.`,
         short: `Swift and secure packages are ensured with advanced tracking systems and dedicated customer service. Entrust us for timely, precise deliveries that exceed expectations, whether residential or commercial.`,
-        img: "/service-6.jpg"
+        img: "/last-mail.jpeg"
 
     },
 ];
