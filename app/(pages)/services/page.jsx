@@ -83,7 +83,7 @@ const Page = () => {
               <p className="text-lg text-white ">Best Logistics services</p>
             </div>
             <div className="mx-auto max-h-50 py-3">
-              <p className="text-lg text-white ">666 888 0000</p>
+              <p className="text-lg text-white ">+91 93424 29282</p>
             </div>
             <div className="mx-auto max-h-50 py-3">
               <p className="text-lg text-white ">Call us any time</p>
