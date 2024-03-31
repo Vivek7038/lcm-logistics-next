@@ -39,13 +39,11 @@ const Page = () => {
       {/*  seperator*/}
       <div className="flex flex-col px-10 md:px-20 w-[100dvw] h-auto">
         <div className="flex flex-col md:flex-row gap-y-8 gap-x-5 items-start pt-[10dvh]">
-          <div className="w-full h-100 md:w-[70%] ">
+          <div className="w-full h-auto md:w-[70%] ">
             <img
               src={selectedService.img}
               alt="banner"
-              width={300}
-              layout="responsive"
-              className="object-contain w-full h-full min-h-full"
+              className="object-cover w-full h-[800px]"
             />
           </div>
           <div className="bg-[#F4F4F4] w-full md:w-[40%] border rounded-lg flex flex-col h-fit min-h-full max-h-fit pb-2 dark:bg-black dark:text-white">

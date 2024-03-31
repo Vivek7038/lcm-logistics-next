@@ -72,17 +72,17 @@ const Navbar = () => {
           <img
             src={"./logo-1.png"}
             alt={"logo"}
-            className={"h-8 w-8 pr-2 cursor-pointer"}
+            className={"h-10 w-20 pr-2 cursor-pointer"}
             onClick={() => router.push("/")}
           ></img>
-          <div
+          {/* <div
             className={`text-2xl text-black ${
               color ? "text-white" : ""
             } pl-2 cursor-pointer`}
             onClick={() => router.push("/")}
           >
             LCM.PVT.LTD
-          </div>
+          </div> */}
         </div>
         <div className="block md:hidden pl-4 ml-auto">
           <label className="flex  items-center cursor-pointer">
