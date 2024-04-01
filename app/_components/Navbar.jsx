@@ -16,7 +16,7 @@ const data = [
     link: "/services",
   },
   {
-    label: "Abous Us ",
+    label: "About Us ",
     link: "/about-us",
   },
   {
@@ -67,14 +67,14 @@ const Navbar = () => {
         color ? "bg-black" : ""
       }`}
     >
-      <div className="flex flex-row  items-center  justify-between py-7 px-4  lg:px-20">
+      <div className="flex flex-row  items-center  justify-between py-3 px-4  lg:px-20">
         <div className="font-bold text-[18px] flex items-center justify-between">
           <img
             src={"./logo-1.png"}
             alt={"logo"}
-            className={"h-10 w-20 pr-2 cursor-pointer"}
+            className={"h-14 w-24 pr-2 cursor-pointer"}
             onClick={() => router.push("/")}
-          ></img>
+          ></img> 
           {/* <div
             className={`text-2xl text-black ${
               color ? "text-white" : ""

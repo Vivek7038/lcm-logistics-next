@@ -16,7 +16,7 @@ export default function Card({ item, index = 1 }) {
     }
     return (
         <div
-            className={"w-[355px] h-[455px]  relative shadow-lg bg-white dark:bg-dark_cards dark:text-white  rounded-md  mb-10"}>
+            className={"w-[355px] h-[468px]  relative shadow-lg bg-white dark:bg-dark_cards dark:text-white  rounded-md  mb-10"}>
             <div className="">
                 <img src={item.img} alt={"img"} className={"h-[203px] w-[100%]  rounded-md "} />
             </div>
@@ -28,7 +28,7 @@ export default function Card({ item, index = 1 }) {
            
                     {item.short}
                 </p>
-                <a className={"absolute pt-4  font-medium md:right-4 md:bottom-4 cursor-pointer text-sm md:text-md lg:text-md xl:text-lg group md:mt-16"} onClick={() => handleClick(item)}>
+                <a className={"absolute pt-2 pb-2  font-medium md:right-4 md:bottom-4 cursor-pointer text-sm md:text-md lg:text-md xl:text-lg group md:mt-16"} onClick={() => handleClick(item)}>
                     READ MORE
                     <div className="bg-black h-[2px] w-0 group-hover:w-full transition-all duration-500 dark:bg-white"></div>
                 </a>

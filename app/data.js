@@ -67,7 +67,7 @@ export const data = [
 
     },
     {
-        name: "Last mail Delivery  ",
+        name: "Last mile Delivery  ",
         desc: `At our company, we specialize in Last Mile Delivery, ensuring your packages reach their destination swiftly and securely. With our efficient network of delivery agents and advanced tracking systems, we guarantee timely and accurate deliveries. Our dedicated team goes the extra mile to accommodate specific delivery preferences and provide exceptional customer service. Whether it's residential or commercial addresses, we handle the last leg of the delivery process with precision and care. By entrusting us with your last mile deliveries, you can rest assured that your packages will arrive on time and in pristine condition. Partner with us for reliable Last Mile Delivery services that exceed your expectations and delight your customers.`,
         short: `Swift and secure packages are ensured with advanced tracking systems and dedicated customer service. Entrust us for timely, precise deliveries that exceed expectations, whether residential or commercial.`,
         img: "/service/Lastmaildelivery1.jpg"

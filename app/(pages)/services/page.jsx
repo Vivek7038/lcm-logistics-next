@@ -43,7 +43,7 @@ const Page = () => {
             <img
               src={selectedService.img}
               alt="banner"
-              className="object-cover w-full h-[800px]"
+              className="object-cover w-full h-[800px] border rounded-md"
             />
           </div>
           <div className="bg-[#F4F4F4] w-full md:w-[40%] border rounded-lg flex flex-col h-fit min-h-full max-h-fit pb-2 dark:bg-black dark:text-white">
