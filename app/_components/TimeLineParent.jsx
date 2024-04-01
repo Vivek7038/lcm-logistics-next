@@ -31,12 +31,9 @@ const TimeLineParent = () => {
                     {item.date}
                   </h1>
                 </div>
-                <div className="flex flex-col items-center justify-between py-4 px-2">
+                <div className="flex flex-col items-center justify-center py-4 px-2">
                   <h1 className="text-md text-[#838383] text-wrap text-center dark:text-white">
                     Delivery made:{item.Delivery}
-                  </h1>
-                  <h1 className="text-md text-[#838383] text-wrap text-center dark:text-white">
-                    revenue : {item.revenue}
                   </h1>
                 </div>
               </div>

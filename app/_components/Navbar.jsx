@@ -63,8 +63,8 @@ const Navbar = () => {
   }, []);
   return (
     <main
-      className={`z-[9999] min-h-30  min-w-[100vw] fixed  lg:w-[100vw]  text-white ${
-        color ? "bg-black" : ""
+      className={`z-[9999] min-h-26 max-h-18  min-w-[100vw] fixed  lg:w-[100vw]  text-white ${
+        color ? "bg-black opacity-50" : ""
       }`}
     >
       <div className="flex flex-row  items-center  justify-between py-3 px-4  lg:px-20">
@@ -74,7 +74,7 @@ const Navbar = () => {
             alt={"logo"}
             className={"h-14 w-24 pr-2 cursor-pointer"}
             onClick={() => router.push("/")}
-          ></img> 
+          ></img>
           {/* <div
             className={`text-2xl text-black ${
               color ? "text-white" : ""
