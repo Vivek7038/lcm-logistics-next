@@ -26,31 +26,50 @@
   --footer-text: #838383;
 }
 
-.hide-scrollbar::-webkit-scrollbar {
-  display: none;
-}
+/* .hide-scrollbar::-webkit-scrollbar {
+  /* display: none; */
+/* } */
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .hide-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-
-.banner-div {
+*/ .banner-div {
   position: relative; /* Required for z-index to work */
   z-index: 1;
-  background: 
-    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%),
-    url('../public/banner/hero-banner.jpg');
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("../public/banner/hero-banner.jpg");
   background-size: cover;
   background-position: center;
 }
 .banner-div-new {
   position: relative; /* Required for z-index to work */
   z-index: 1;
-  background: 
-    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%),
-    url('../public/banner/newhero.jpg');
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("../public/banner/newhero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.banner-title {
+  position: relative; /* Required for z-index to work */
+  z-index: 1;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
   background-size: cover;
   background-position: center;
 }

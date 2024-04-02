@@ -64,7 +64,7 @@ export default function Home() {
 
     // -------------------------------------------
     return (
-        <div className={"bg-white dark:bg-dark_bg"}>
+        <div className={"bg-white dark:bg-dark_bg overflow-y-auto"}>
             <div
                 className={"w-[100dvw] h-[100dvh] bg-[url('../public/banner/hero-banner.jpg')] bg-cover flex justify-center pt-[30dvh] banner-div"}>
 
