@@ -28,7 +28,7 @@ const Page = () => {
   };
   return (
     <div className="w-[100dvw] h-auto min-h-[100dvh] flex-col hide-scrollbar relative dark:bg-dark_bg">
-      <div className="bg-[url('../public/hero-banner.jpg')] bg-cover flex flex-col justify-center pt-[30dvh] min-w-[100dvw] min-h-[80dvh] ">
+      <div className="bg-[url('../public/banner/newhero.jpg')] bg-cover flex flex-col justify-center pt-[30dvh] min-w-[100dvw] min-h-[80dvh] banner-div-new">
         <h1 className="md:text-6xl text-4xl text-center text-white font-bold">
           {selectedService.name}
         </h1>

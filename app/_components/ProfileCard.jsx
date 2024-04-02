@@ -2,7 +2,7 @@ import React from "react";
 
 const ProfileCard = ({item}) => {
     return (
-        <div className="w-[355px] h-[410px] relative border-0 rounded-md overflow-y-hidden">
+        <div className="w-[355px] h-[480px] relative border-0 rounded-md overflow-y-hidden">
             <img
                 src={item.img}
                 alt={"logo"}
