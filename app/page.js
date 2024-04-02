@@ -67,7 +67,7 @@ export default function Home() {
         <div className={"bg-white dark:bg-dark_bg"}>
             <div
                 className={"w-[100dvw] h-[100dvh] bg-[url('../public/banner/hero-banner.jpg')] bg-cover flex justify-center pt-[30dvh] banner-div"}>
-               
+
             </div>
 
 
@@ -83,10 +83,10 @@ export default function Home() {
 
                     <div className={"w-12 h-0 border-2 border-black border-solid flex justify-center md:block dark:border-white"}></div>
                     <div
-                        className={"md:grid xl:grid-cols-3 md:grid-cols-2 gap-5 w-[100%] mt-4 gap-x-2 gap-y-2 flex overflow-scroll md:overflow-hidden"}>
+                        className={"md:grid  xl:grid-cols-3 gap-x-10 md:grid-cols-2 gap-5 w-[100%] mt-4 flex overflow-scroll md:overflow-hidden"}>
                         {
                             data.map((ele, index) => {
-                                return (<div key={index} className={"col-span-1 row-span-1 relative"} ><Card item={ele} index={index} />
+                                return (<div key={index} className={"col-span-1 row-span-1 relative border-0"} ><Card item={ele} index={index} />
                                 </div>)
                             }
                             )
