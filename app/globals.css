@@ -35,7 +35,7 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-*/ .banner-div {
+ .banner-div {
   position: relative; /* Required for z-index to work */
   z-index: 1;
   background: linear-gradient(
