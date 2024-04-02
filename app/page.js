@@ -68,7 +68,7 @@ export default function Home() {
             <div
                 className={"w-[100dvw] h-[100dvh] bg-[url('../public/hero-banner.jpg')] bg-cover flex justify-center pt-[30dvh] banner-div"}>
                 <div className={"flex flex-col items-center text-white w-[80%] md:w-[100%]"}>
-                    <div className={"2xl:text-9xl xl:text-8xl md:text-6xl font-bold text-3xl   "}>LCM LOGISTICS</div>
+                    <div className={"2xl:text-9xl xl:text-8xl md:text-6xl font-bold text-3xl  text-[rgb(45,83,160)]"}>LCM LOGISTICS</div>
                     <div className={"flex flex-col items-center mt-8 md:w-[50%]"}>
 
                         <p className="text-center">Transform your supply chain efficiency with our integrated logistics solutions. From streamlined transportation to optimized inventory management, we offer comprehensive support to enhance your operations and drive cost savings</p>
