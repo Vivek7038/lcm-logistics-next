@@ -27,21 +27,21 @@ export const data = [
         name: "Full Truck Load",
         desc: `Our efficient and reliable Full Truck Load (FTL) services. With dedicated truck capacity, timely pickups, and deliveries, we ensure your cargo receives priority attention. Our experienced team prioritizes reliability, proactive communication, and competitive pricing, offering flexibility and scalability to meet your needs. Trust us for safe, secure, and cost-effective transportation solutions that streamline your supply chain and drive your business forward. `,
         short: `Dedicated capacity, timely pickups, and deliveries for priority cargo attention. Experienced team ensures reliability, proactive communication, and competitive pricing for streamlined supply chain solutions.`,
-        img: "/service/fulltruckload.png"
+        img: "/service/full-truck-2.jpeg"
     },
     {
         name: "Reverse Logistics  ",
         desc: `our comprehensive Reverse Logistics services, aimed at optimizing your supply chain by efficiently managing product returns, repairs, and disposal. With our expertise, we ensure seamless returns processing, timely product repairs, and responsible disposal of unsalvageable items. Our commitment to sustainability drives us to prioritize environmentally friendly practices, such as recycling and refurbishing, to minimize waste and reduce our carbon footprint. Partner with us for reliable solutions that not only enhance customer satisfaction but also maximize value for your business. Experience the difference of working with a trusted partner dedicated to excellence and sustainability in Reverse Logistics.`,
         short: `Efficiently manage returns, repairs, and disposal. Prioritize sustainability through recycling and refurbishing, maximizing value while minimizing waste.
         `,
-        img: "/service/Reverse Logistics.jpg"
+        img: "/service/reverse-2.jpg"
 
     },
     {
         name: "Over Dimensional Cargo ",
         desc: ` we specialize in handling Over Dimensional Cargo (ODC), which refers to shipments that exceed standard size and weight limits. With our expertise and specialized equipment, we ensure safe and efficient transportation of oversized and heavy cargo across various industries. Our dedicated team prioritizes customized solutions tailored to meet the unique requirements of each ODC shipment, whether it involves heavy machinery, industrial equipment, or large components. We adhere to strict safety protocols and regulatory standards to guarantee the protection of your cargo and the safety of our team members throughout the transportation process. Partner with us for reliable and efficient ODC services, delivering your oversized cargo on time and within budget.`,
         short: `Safe and efficient transportation of oversized shipments with tailored solutions and strict safety protocols. Delivering on time and within budget, ensuring protection of cargo and team members.`,
-        img: "/service/Overdimensional.jpg"
+        img: "/service/Overdimensional-2.jpeg"
 
     },
     {

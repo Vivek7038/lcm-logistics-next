@@ -7,7 +7,7 @@ export default function Footer() {
             <div
                 className={"flex w-[100%] bg-black lg:py-12 py-6 md:py-8 lg:px-40 md:px-4 md:justify-between flex-col md:flex-row items-center"}>
                 <div className={"text-white w-[88%] md:w-[20%] lg:w-[30%] flex md:block flex-col items-center"}>
-                    <p className={"font-medium xl:text-xl mb-4  "}>LCM LOGISTICS.PVT.LTD</p>
+                    <p className={"font-medium xl:text-xl mb-4  "}>LCM LOGISTICS PVT LTD</p>
                     <p>
                         Streamline Your Supply Chain with Our Comprehensive Logistics Solutions
                     </p>
@@ -18,10 +18,10 @@ export default function Footer() {
                 <div className={"flex md:hidden my-6 w-[61%] justify-between"}>
                     <div>
                         <ul className={"list-none text-gray-500 flex flex-col gap-4"}>
-                            <li><Link href={""}>Home</Link></li>
-                            <li><Link href={""}>About</Link></li>
-                            <li><Link href={""}>Contact</Link></li>
-                            <li><Link href={""}>Office</Link></li>
+                            <li><Link href={"/"}>Home</Link></li>
+                            <li><Link href={"/services"}>Services</Link></li>
+                            <li><Link href={"/about-us"}>About</Link></li>
+                            <li><Link href={"#Contact"}>Contact</Link></li>
                         </ul>
 
                     </div>
@@ -38,9 +38,9 @@ export default function Footer() {
                 <div className={"hidden md:block"}>
                     <ul className={"list-none text-gray-500 flex flex-col gap-6"}>
                         <li><Link href={"/"}>Home</Link></li>
+                        <li><Link href={"/services"}>Services</Link></li>
                         <li><Link href={"/about-us"}>About</Link></li>
                         <li><Link href={"#Contact"}>Contact</Link></li>
-                        <li><Link href={"/services"}>Services</Link></li>
                     </ul>
 
                 </div>
@@ -107,7 +107,7 @@ export default function Footer() {
 
             </div>
             <div className={"flex w-[100%] py-4 text-white justify-center py-8s bg-stone-950 text-sm"}>
-                Copyright@2024 LCM.All right reserved
+                Copyright@LCM LOGISTICS PVT LTD.All right reserved
             </div>
         </div>
     )

@@ -69,10 +69,6 @@ const Page = () => {
             <h1 className="md:text-6xl text-4xl  text-black dark:text-light_txt font-bold my-3">
               Meet The Team
             </h1>
-            <p className="text-justify ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore
-            </p>
           </div>
           {/* profile cards */}
           <div className="md:grid  xl:grid-cols-3 md:grid-cols-2 gap-5 w-[100%] mt-4 gap-x-2 flex overflow-scroll md:overflow-hidden">

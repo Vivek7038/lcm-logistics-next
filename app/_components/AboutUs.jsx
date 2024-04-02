@@ -27,9 +27,9 @@ const AboutUs = () => {
           <p className="text-justify">
             Professionally managed by 60 full time employees with all businesses
             contracted with total of 140+ owned vehicles and approximation of
-            500+ on-call based vehicles.Having its strong regional hold in South
-            India & Maharashtra, with plans to expand all over the
-            country.Company is also into warehousing and managing other
+            500+ on-call based vehicles. Having its strong regional hold in
+            South India & Maharashtra, with plans to expand all over the
+            country. Company is also into warehousing and managing other
             warehouses.
           </p>
         </div>
@@ -44,7 +44,7 @@ const AboutUs = () => {
             <p className={"md:text-4xl text-2xl"}>
               <a className={"font-bold md:text-6xl text-3xl"}>25</a>k
             </p>
-            <p>Serving over pincode</p>
+            <p>Serving pincode</p>
           </div>
         </div>
         <button
@@ -63,7 +63,11 @@ const AboutUs = () => {
             "absolute h-40 w-40 z-10 2xl:bottom-32 md:bottom-12 xl:-right-20 md:right-2 hidden md:block"
           }
         />
-        <img src={"./LCM-pic-4.jpg "} className={"relative z-20"} alt={"img"} />
+        <img
+          src={"./LCM-pic-4.jpg "}
+          className={"relative z-20 border rounded-md"}
+          alt={"img"}
+        />
       </div>
     </>
   );
