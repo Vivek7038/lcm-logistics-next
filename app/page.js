@@ -66,12 +66,12 @@ export default function Home() {
     return (
         <div className={"bg-white dark:bg-dark_bg"}>
             <div
-                className={"w-[100dvw] h-[100dvh] bg-[url('../public/Bg-home.png')] bg-cover flex justify-center pt-[30dvh]"}>
+                className={"w-[100dvw] h-[100dvh] bg-[url('../public/hero-banner.jpg')] bg-cover flex justify-center pt-[30dvh]"}>
                 <div className={"flex flex-col items-center text-white w-[80%] md:w-[100%]"}>
                     <div className={"2xl:text-9xl xl:text-8xl md:text-6xl font-bold text-3xl   "}>LCM LOGISTICS</div>
-                    <div className={"flex flex-col items-center mt-8 "}>
+                    <div className={"flex flex-col items-center mt-8 md:w-[50%]"}>
 
-                        <p className="text-center">Streamline Your Supply Chain with Our Comprehensive Logistics Solutions</p>
+                        <p className="text-center">Transform your supply chain efficiency with our integrated logistics solutions. From streamlined transportation to optimized inventory management, we offer comprehensive support to enhance your operations and drive cost savings</p>
 
                     </div>
                     <div className={"flex mt-8 items-center text-center flex-col gap-y-2 md:flex-row"}>

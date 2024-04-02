@@ -81,13 +81,13 @@ export const Profiledata = [
         role: "DIRECTOR",
         desc: `A Supply Chain Professional with over 15 years of entrepreneurial stint, as having found LCM Logistics Private Limited.
         `,
-        img: "./user-profile.png"
+        img: "./SUBRAMANYA-BT.jpg"
     },
     {
         name: "SUBBAIAH TM",
         role: "DIRECTOR",
         desc: `Started his career way back in 1999, and later on entered into logistics industry and soon gained expertise in handling large clients as Key Accounts Manager.`,
-        img: "./user-profile.png"
+        img: "./Subramanya02.jpg"
     },
     {
         name: "Alen Wallker",
