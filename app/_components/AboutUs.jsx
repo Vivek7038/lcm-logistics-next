@@ -63,7 +63,7 @@ const AboutUs = () => {
             "absolute h-40 w-40 z-10 2xl:bottom-32 md:bottom-12 xl:-right-20 md:right-2 hidden md:block"
           }
         />
-        <img src={"./Aboutus_vdo.png "} className={"relative z-20"} alt={"img"} />
+        <img src={"./LCM-pic-4.jpg "} className={"relative z-20"} alt={"img"} />
       </div>
     </>
   );
